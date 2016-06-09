@@ -11,8 +11,8 @@ namespace Shift.Input
         public static MouseState GetState(GameWindow window)
         {
             int x, y;
-
-            var winFlags = Sdl.Window.GetWindowFlags(window.Handle);
+                
+            var winFlags = GetWindowFlags(window.Handle);
             var state = (Sdl.Patch > 4) ? // SDL 2.0.4 has a bug with Global Mouse
                     Sdl.Mouse.GetGlobalState(out x, out y) :
                     Sdl.Mouse.GetState(out x, out y);
