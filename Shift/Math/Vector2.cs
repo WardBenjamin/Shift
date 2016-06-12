@@ -11,16 +11,10 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Vector2 : IEquatable<Vector2>
     {
-        #region Private Fields
-
         private static readonly Vector2 zeroVector = new Vector2(0f, 0f);
         private static readonly Vector2 unitVector = new Vector2(1f, 1f);
         private static readonly Vector2 unitXVector = new Vector2(1f, 0f);
         private static readonly Vector2 unitYVector = new Vector2(0f, 1f);
-
-        #endregion
-
-        #region Public Fields
 
         /// <summary>
         /// The x coordinate of this <see cref="Vector2"/>.
@@ -33,10 +27,6 @@ namespace Shift
         /// </summary>
         [DataMember]
         public float Y;
-
-        #endregion
-
-        #region Properties
 
         /// <summary>
         /// Returns a <see cref="Vector2"/> with components 0, 0.
@@ -70,10 +60,6 @@ namespace Shift
             get { return unitYVector; }
         }
 
-        #endregion
-
-        #region Internal Properties
-
         internal string DebugDisplayString
         {
             get
@@ -84,10 +70,6 @@ namespace Shift
                 );
             }
         }
-
-        #endregion
-
-        #region Constructors
 
         /// <summary>
         /// Constructs a 2d vector with X and Y from two values.
@@ -109,10 +91,6 @@ namespace Shift
             this.X = value;
             this.Y = value;
         }
-
-        #endregion
-
-        #region Operators
 
         /// <summary>
         /// Inverts values in the specified <see cref="Vector2"/>.
@@ -239,10 +217,6 @@ namespace Shift
         {
             return value1.X != value2.X || value1.Y != value2.Y;
         }
-
-        #endregion
-
-        #region Public Methods
 
         /// <summary>
         /// Performs vector addition on <paramref name="value1"/> and <paramref name="value2"/>.

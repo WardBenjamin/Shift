@@ -4,40 +4,78 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using SDL2;
+
 namespace Shift.Input
 {
     class Mouse
     {
-        public static MouseState GetState(GameWindow window)
+        internal static int ScrollY;
+
+        public static MouseState GetState()
+        {
+            return GetState(GameWindow.Primary);
+        }
+
+        private static MouseState GetState(GameWindow window)
         {
             int x, y;
-                
-            var winFlags = GetWindowFlags(window.Handle);
-            var state = (Sdl.Patch > 4) ? // SDL 2.0.4 has a bug with Global Mouse
-                    Sdl.Mouse.GetGlobalState(out x, out y) :
-                    Sdl.Mouse.GetState(out x, out y);
+
+            var winFlags = window.GetWindowFlags();
+            // NOTE: SDL 2.0.4 has a bug with Global Mouse. When fixed, replace this with GlobalMouseState
+            var state = (ButtonFlags)SDL.SDL_GetMouseState(out x, out y);
             var clientBounds = window.ClientBounds;
+            var windowState = window.MouseState;
 
-            if (winFlags.HasFlag(Sdl.Window.State.MouseFocus))
+
+            if (winFlags.HasFlag(GameWindow.WindowFlags.MouseFocus))
             {
-                window.MouseState.LeftButton = (state.HasFlag(Sdl.Mouse.Button.Left)) ? ButtonState.Pressed : ButtonState.Released;
-                window.MouseState.MiddleButton = (state.HasFlag(Sdl.Mouse.Button.Middle)) ? ButtonState.Pressed : ButtonState.Released;
-                window.MouseState.RightButton = (state.HasFlag(Sdl.Mouse.Button.Right)) ? ButtonState.Pressed : ButtonState.Released;
-                window.MouseState.XButton1 = (state.HasFlag(Sdl.Mouse.Button.X1Mask)) ? ButtonState.Pressed : ButtonState.Released;
-                window.MouseState.XButton2 = (state.HasFlag(Sdl.Mouse.Button.X2Mask)) ? ButtonState.Pressed : ButtonState.Released;
+                windowState.LeftButton = (state.HasFlag(ButtonFlags.Left)) ? ButtonState.Pressed : ButtonState.Released;
+                windowState.MiddleButton = (state.HasFlag(ButtonFlags.Middle)) ? ButtonState.Pressed : ButtonState.Released;
+                windowState.RightButton = (state.HasFlag(ButtonFlags.Right)) ? ButtonState.Pressed : ButtonState.Released;
+                windowState.XButton1 = (state.HasFlag(ButtonFlags.X1Mask)) ? ButtonState.Pressed : ButtonState.Released;
+                windowState.XButton2 = (state.HasFlag(ButtonFlags.X2Mask)) ? ButtonState.Pressed : ButtonState.Released;
 
-                window.MouseState.ScrollWheelValue = ScrollY;
+                windowState.ScrollWheelValue = ScrollY;
             }
 
-            window.MouseState.X = x - ((Sdl.Patch > 4) ? clientBounds.X : 0);
-            window.MouseState.Y = y - ((Sdl.Patch > 4) ? clientBounds.Y : 0);
+            // NOTE: Subtract clientBounds.X and Y instead of zero when Global Mouse bug is fixed.
+            windowState.X = x - 0;
+            windowState.Y = y - 0;
+
+            window.MouseState = windowState;
 
             return window.MouseState;
         }
-    }
 
-    class MouseState
-    {
+        public static void SetPosition(int x, int y)
+        {
+            SetPosition(GameWindow.Primary, x, y);
+        }
 
+        private static void SetPosition(GameWindow window, int x, int y)
+        {
+            MouseState windowState = window.MouseState;
+            windowState.X = x;
+            windowState.Y = y;
+
+            window.MouseState = windowState;
+            SDL.SDL_WarpMouseInWindow(window.Handle, x, y);
+        }
+
+        public static void SetCursor()//MouseCursor cursor)
+        {
+            //Sdl.Mouse.SetCursor(cursor.Handle);
+        }
+
+        [Flags]
+        enum ButtonFlags
+        {
+            Left = 1 << 0,
+            Middle = 1 << 1,
+            Right = 1 << 2,
+            X1Mask = 1 << 3,
+            X2Mask = 1 << 4
+        }
     }
 }

@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace Shift
 {
-    public class Shift
+    public class GameTime
     {
+        public GameTime(TimeSpan delta)
+        {
+
+        }
     }
 }
