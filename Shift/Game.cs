@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
@@ -22,6 +22,7 @@ namespace Shift
 
         public Game(int width, int height, string title)
         {
+            Window = new GameWindow(width, height, title);
             Running = true;
         }
 
@@ -29,6 +30,8 @@ namespace Shift
 
         public void Run(bool isFixedTimeStep = false)
         {
+            Window.Show();
+
             _gameTimer = Stopwatch.StartNew();
             GameTime gameTime = new GameTime(TimeSpan.Zero);
 

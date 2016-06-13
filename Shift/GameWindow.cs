@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -96,10 +96,11 @@ namespace Shift
             MouseState = MouseState.Default;
             if (Primary == null)
                 Primary = this;
-            /*Handle = SDL.SDL_CreateWindow(title, WindowFlags.OpenGL |
+            
+            Handle = SDL.SDL_CreateWindow(title, PosCentered, PosCentered, width, height, (SDL.SDL_WindowFlags)(WindowFlags.OpenGL |
                 WindowFlags.Hidden |
                 WindowFlags.InputFocus |
-                WindowFlags.MouseFocus);*/
+                WindowFlags.MouseFocus));
         }
 
         internal WindowFlags GetWindowFlags()
@@ -142,5 +143,8 @@ namespace Shift
             AllowHighDPI = 0x00002000,
             MouseCapture = 0x00004000,
         }
+
+        public const int PosUndefined = 0x1FFF0000;
+        public const int PosCentered = 0x2FFF0000;
     }
 }
