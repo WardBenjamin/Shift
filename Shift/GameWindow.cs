@@ -11,13 +11,73 @@ namespace Shift
 {
     public class GameWindow
     {
+        private int _width, _height;
+        private bool _isBorderless;
+        private bool _isFullscreen;
+
         internal IntPtr Handle;
         internal static GameWindow Primary;
 
         /// <summary>
+        /// Gets or sets whether or not the window is in fullscreen. Be aware that 
+        /// Shift does not support fullscreen modes that have differing buffer
+        /// sizes and actual dimensions (aka it supports "fullscreen window" mode 
+        /// but not mode switching. This is false by default;
+        /// </summary>
+        public bool IsFullscreen
+        {
+            get { return _isFullscreen; }
+            set
+            {
+                _isFullscreen = value;
+                SDL.SDL_SetWindowFullscreen(Handle, value ? (uint)WindowFlags.FullscreenDesktop : 0);
+            }
+        }
+
+        /// <summary>
         /// Gets the client boundaries of the window (position, width, and height).
         /// </summary>
-        public Rectangle ClientBounds { get; private set; }
+        public Rectangle ClientBounds
+        {
+            get
+            {
+                int x = 0, y = 0;
+                SDL.SDL_GetWindowPosition(Handle, out x, out y);
+                return new Rectangle(x, y, _width, _height);
+            }
+        }
+
+        /// <summary>
+        /// Gets or sets the window screen position.
+        /// </summary>
+        public Point Position
+        {
+            get
+            {
+                int x = 0, y = 0;
+
+                if (!_isFullscreen)
+                    SDL.SDL_GetWindowPosition(Handle, out x, out y);
+
+                return new Point(x, y);
+            }
+            set { SDL.SDL_SetWindowPosition(Handle, value.X, value.Y); }
+        }
+
+        /// <summary>
+        /// Gets or sets the border state. If true, the window is borderless. 
+        /// If false, the window has a border. This is false by default.
+        /// </summary>
+        public bool IsBorderless
+        {
+            get { return _isBorderless; }
+            set
+            {
+                SDL.SDL_SetWindowBordered(Handle, value ? (SDL.SDL_bool)1 : 0);
+                _isBorderless = value;
+            }
+        }
+
 
         /// <summary>
         /// MouseState associated with the window. Currently is not required because 
@@ -34,7 +94,12 @@ namespace Shift
         internal GameWindow(int width, int height, string title)
         {
             MouseState = MouseState.Default;
-            Primary = this;
+            if (Primary == null)
+                Primary = this;
+            /*Handle = SDL.SDL_CreateWindow(title, WindowFlags.OpenGL |
+                WindowFlags.Hidden |
+                WindowFlags.InputFocus |
+                WindowFlags.MouseFocus);*/
         }
 
         internal WindowFlags GetWindowFlags()
