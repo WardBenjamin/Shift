@@ -9,9 +9,6 @@ namespace Shift
 {
     public abstract class Game
     {
-        private TimeSpan _targetElapsedTime = TimeSpan.FromTicks(166667); // 60 FPS, used for fixed framerate timing
-        private TimeSpan _accumulatedElapsedTime = TimeSpan.Zero; // Used to track elapsed time
-
         private Stopwatch _gameTimer;
 
         public GameWindow Window;
@@ -28,28 +25,20 @@ namespace Shift
 
         public Game(Vector2 size, string title) : this((int)size.X, (int)size.Y, title) { }
 
-        public void Run(bool isFixedTimeStep = false)
+        public void Run(bool useVSync = false)
         {
             Window.Show();
 
             _gameTimer = Stopwatch.StartNew();
             GameTime gameTime = new GameTime(TimeSpan.Zero);
 
-            if(isFixedTimeStep)
+            while (Running)
             {
-                while(Running)
-                {
+                Platform.ProcessEvents();
+                Update(gameTime);
+                Draw(gameTime);
+            }
 
-                }
-            }
-            else
-            {
-                while (Running)
-                {
-                    Update(gameTime);
-                    Draw(gameTime);
-                }
-            }
         }
 
         /// <summary>
@@ -60,7 +49,7 @@ namespace Shift
             _gameTimer.Restart();
             _accumulatedElapsedTime = TimeSpan.Zero;
         }
-        
+
         public abstract void Update(GameTime time);
         public abstract void Draw(GameTime time);
     }
