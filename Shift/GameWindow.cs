@@ -96,11 +96,11 @@ namespace Shift
             MouseState = MouseState.Default;
             if (Primary == null)
                 Primary = this;
-            
-            Handle = SDL.SDL_CreateWindow(title, PosCentered, PosCentered, width, height, (SDL.SDL_WindowFlags)(WindowFlags.OpenGL |
-                WindowFlags.Hidden |
-                WindowFlags.InputFocus |
-                WindowFlags.MouseFocus));
+
+            Handle = SDL.SDL_CreateWindow(title, PosCentered, PosCentered, width, height, 
+                (SDL.SDL_WindowFlags)(WindowFlags.OpenGL | WindowFlags.Hidden 
+                | WindowFlags.InputFocus | WindowFlags.MouseFocus)
+            );
         }
 
         internal WindowFlags GetWindowFlags()

@@ -13,12 +13,24 @@ namespace Shift
 
         public GameWindow Window;
 
+        /// <summary>
+        /// True if the game loop is running.
+        /// </summary>
         public bool Running = false;
+
+        /// <summary>
+        /// Indicates whether the game is currently the active application.
+        /// </summary>
+        public bool IsActive
+        {
+            get { return Platform.IsActive; }
+        }
 
         public Game() : this(800, 600, "Shift") { }
 
         public Game(int width, int height, string title)
         {
+            Platform.Init(this);
             Window = new GameWindow(width, height, title);
             Running = true;
         }
@@ -27,6 +39,9 @@ namespace Shift
 
         public void Run(bool useVSync = false)
         {
+            if (useVSync)
+                throw new ArgumentException("VSync currently not supported.");
+
             Window.Show();
 
             _gameTimer = Stopwatch.StartNew();
@@ -47,7 +62,6 @@ namespace Shift
         public void ResetElapsedTime()
         {
             _gameTimer.Restart();
-            _accumulatedElapsedTime = TimeSpan.Zero;
         }
 
         public abstract void Update(GameTime time);

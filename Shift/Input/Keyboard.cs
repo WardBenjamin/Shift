@@ -21,6 +21,11 @@ namespace Shift.Input
             );
         }
 
+        public static void SetKeys(List<Keys> keys)
+        {
+            _keys = keys;
+        }
+
         [Flags]
         enum ModifierFlags : ushort
         {
