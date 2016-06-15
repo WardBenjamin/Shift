@@ -42,6 +42,7 @@ namespace Shift
             if (useVSync)
                 throw new ArgumentException("VSync currently not supported.");
 
+            Window.Create();
             Window.Show();
 
             _gameTimer = Stopwatch.StartNew();
@@ -52,6 +53,7 @@ namespace Shift
                 Platform.ProcessEvents();
                 Update(gameTime);
                 Draw(gameTime);
+                SDL2.SDL.SDL_GL_SwapWindow(Window.Handle);
             }
 
         }

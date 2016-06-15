@@ -12,8 +12,8 @@ namespace Shift
     public class GameWindow
     {
         private int _width, _height;
-        private bool _isBorderless;
-        private bool _isFullscreen;
+        private string _title;
+        private bool _isBorderless, _isFullscreen;
 
         internal IntPtr Handle;
         internal static GameWindow Primary;
@@ -78,6 +78,19 @@ namespace Shift
             }
         }
 
+        public string Title
+        {
+            get
+            {
+                return _title;
+            }
+            set
+            {
+                _title = value;
+                SDL.SDL_SetWindowTitle(Handle, _title);
+            }
+        }
+
 
         /// <summary>
         /// MouseState associated with the window. Currently is not required because 
@@ -97,10 +110,21 @@ namespace Shift
             if (Primary == null)
                 Primary = this;
 
-            Handle = SDL.SDL_CreateWindow(title, PosCentered, PosCentered, width, height, 
-                (SDL.SDL_WindowFlags)(WindowFlags.OpenGL | WindowFlags.Hidden 
-                | WindowFlags.InputFocus | WindowFlags.MouseFocus)
+            Handle = IntPtr.Zero;
+            _title = title;
+            _width = width;
+            _height = height;
+        }
+
+        internal void Create()
+        {
+            Handle = SDL.SDL_CreateWindow(_title, SDL.SDL_WINDOWPOS_CENTERED, SDL.SDL_WINDOWPOS_CENTERED, _width, _height,
+                (SDL.SDL_WindowFlags)(WindowFlags.OpenGL | WindowFlags.Hidden | WindowFlags.InputFocus | WindowFlags.MouseFocus)
             );
+            if (Handle == IntPtr.Zero)
+                throw new Exception(SDL.SDL_GetError());
+            var Context = SDL.SDL_GL_CreateContext(Handle);
+            SDL.SDL_GL_MakeCurrent(Handle, Context);
         }
 
         internal WindowFlags GetWindowFlags()
@@ -143,8 +167,5 @@ namespace Shift
             AllowHighDPI = 0x00002000,
             MouseCapture = 0x00004000,
         }
-
-        public const int PosUndefined = 0x1FFF0000;
-        public const int PosCentered = 0x2FFF0000;
     }
 }

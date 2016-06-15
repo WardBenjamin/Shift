@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+using System.Collections.Generic;
 using SDL2;
 using Shift.Input;
 using Shift.Input.Util;
@@ -27,6 +27,12 @@ namespace Shift
             _game = game;
             SDL.SDL_Init(SDL.SDL_INIT_VIDEO);/* | SDL.SDL_INIT_JOYSTICK 
                 | SDL.SDL_INIT_GAMECONTROLLER | SDL.SDL_INIT_HAPTIC);**/
+
+            SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+            SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_CONTEXT_MINOR_VERSION, 3);
+            SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_CONTEXT_PROFILE_MASK,(int)SDL.SDL_GLprofile.SDL_GL_CONTEXT_PROFILE_CORE);
+            SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_CONTEXT_FLAGS, (int)SDL.SDL_GLcontext.SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG);
+            SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_DOUBLEBUFFER, 1);
 
             SDL.SDL_DisableScreenSaver();
         }

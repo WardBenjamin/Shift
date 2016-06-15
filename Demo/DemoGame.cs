@@ -10,7 +10,10 @@ namespace Demo
 {
     class DemoGame : Game
     {
-        public override void Draw(GameTime time) { }
+        public override void Draw(GameTime time)
+        {
+
+        }
 
         public override void Update(GameTime time) { }
     }
