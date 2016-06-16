@@ -46,10 +46,13 @@ namespace Shift
             Window.Show();
 
             _gameTimer = Stopwatch.StartNew();
-            GameTime gameTime = new GameTime(TimeSpan.Zero);
+            GameTime gameTime = new GameTime(TimeSpan.Zero, TimeSpan.Zero);
 
             while (Running)
             {
+                gameTime.Delta = _gameTimer.Elapsed - gameTime.Total;
+                gameTime.Total = _gameTimer.Elapsed;
+
                 Platform.ProcessEvents();
                 Update(gameTime);
                 Draw(gameTime);
