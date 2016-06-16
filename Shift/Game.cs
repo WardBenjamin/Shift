@@ -53,9 +53,10 @@ namespace Shift
                 Platform.ProcessEvents();
                 Update(gameTime);
                 Draw(gameTime);
-                SDL2.SDL.SDL_GL_SwapWindow(Window.Handle);
+                Window.SwapBuffer();
             }
 
+            Window.Delete();
         }
 
         /// <summary>

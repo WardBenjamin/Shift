@@ -15,7 +15,19 @@ namespace Shift
         private string _title;
         private bool _isBorderless, _isFullscreen;
 
+        /// <summary>
+        /// Pointer representing the native window handle.
+        /// </summary>
         internal IntPtr Handle;
+
+        /// <summary>
+        /// Pointer representing the OpenGL context.
+        /// </summary>
+        internal IntPtr GLContext;
+
+        /// <summary>
+        /// The primary game window, used when referencing mouse and other input.
+        /// </summary>
         internal static GameWindow Primary;
 
         /// <summary>
@@ -125,6 +137,17 @@ namespace Shift
                 throw new Exception(SDL.SDL_GetError());
             var Context = SDL.SDL_GL_CreateContext(Handle);
             SDL.SDL_GL_MakeCurrent(Handle, Context);
+        }
+
+        internal void Delete()
+        {
+            SDL.SDL_GL_DeleteContext(GLContext);
+            SDL.SDL_DestroyWindow(Handle);
+        }
+
+        internal void SwapBuffer()
+        {
+            SDL.SDL_GL_SwapWindow(Handle);
         }
 
         internal WindowFlags GetWindowFlags()
