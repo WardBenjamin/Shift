@@ -1,4 +1,7 @@
+using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
 using SDL2;
 using Shift.Input;
 using Shift.Input.Util;
@@ -8,7 +11,14 @@ namespace Shift
 {
     class Platform
     {
+        public enum OS
+        {
+            Windows,
+            Linux,
+            Mac
+        }
         private static Game _game;
+        private static OS _currentOperatingSystem;
         private static List<Keys> _keys;
 
         public static bool IsActive
@@ -16,10 +26,36 @@ namespace Shift
             get; private set;
         }
 
+        public static OS CurrentOS
+        {
+            get
+            {
+                return _currentOperatingSystem;
+            }
+        }
+
         static Platform()
         {
             _keys = new List<Keys>();
             Keyboard.SetKeys(_keys);
+
+            _currentOperatingSystem = GetCurrentOS();
+        }
+
+
+        public static void LoadDLLs()
+        {
+            AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =>
+            {
+                string resourceName = "AssemblyLoadingAndReflection." +
+                   new AssemblyName(args.Name).Name + ".dll";
+                using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName))
+                {
+                    byte[] assemblyData = new byte[stream.Length];
+                    stream.Read(assemblyData, 0, assemblyData.Length);
+                    return Assembly.Load(assemblyData);
+                }
+            };
         }
 
         public static void Init(Game game)
@@ -30,7 +66,7 @@ namespace Shift
 
             SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_CONTEXT_MAJOR_VERSION, 3);
             SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_CONTEXT_MINOR_VERSION, 1);
-            SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_CONTEXT_PROFILE_MASK,(int)SDL.SDL_GLprofile.SDL_GL_CONTEXT_PROFILE_CORE);
+            SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_CONTEXT_PROFILE_MASK, (int)SDL.SDL_GLprofile.SDL_GL_CONTEXT_PROFILE_CORE);
             SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_CONTEXT_FLAGS, (int)SDL.SDL_GLcontext.SDL_GL_CONTEXT_FORWARD_COMPATIBLE_FLAG);
             SDL.SDL_GL_SetAttribute(SDL.SDL_GLattr.SDL_GL_DOUBLEBUFFER, 1);
 
@@ -98,6 +134,29 @@ namespace Shift
                     else if (ev.window.windowEvent == SDL.SDL_WindowEventID.SDL_WINDOWEVENT_FOCUS_LOST)
                         IsActive = false;
                 }
+            }
+        }
+
+        private static OS GetCurrentOS()
+        {
+            switch (Environment.OSVersion.Platform)
+            {
+                case PlatformID.Unix:
+                    // Well, there are chances MacOSX is reported as Unix instead of MacOSX.
+                    // Instead of platform check, we'll do a feature checks (Mac specific root folders)
+                    if (Directory.Exists("/Applications")
+                        & Directory.Exists("/System")
+                        & Directory.Exists("/Users")
+                        & Directory.Exists("/Volumes"))
+                        return OS.Mac;
+                    else
+                        return OS.Linux;
+
+                case PlatformID.MacOSX:
+                    return OS.Mac;
+
+                default:
+                    return OS.Windows;
             }
         }
     }

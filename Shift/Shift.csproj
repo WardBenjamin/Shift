@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="SDL2-CS">
       <HintPath>..\Shift.Dependencies\SDL2-CS.dll</HintPath>
+      <Private>False</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -53,6 +54,12 @@
   <ItemGroup>
     <Compile Include="GameTime.cs" />
     <Compile Include="GameWindow.cs" />
+    <Compile Include="Graphics\GL\GlEnum.cs" />
+    <Compile Include="Graphics\GL\GlShortcut.cs" />
+    <Compile Include="Graphics\GL\GLSLLexer.cs" />
+    <Compile Include="Graphics\GL\GLStatic.cs" />
+    <Compile Include="Graphics\GL\Shader.cs" />
+    <Compile Include="Graphics\SpriteBatch.cs" />
     <Compile Include="Input\States\ButtonState.cs" />
     <Compile Include="Input\GamePad.cs" />
     <Compile Include="Input\Joystick.cs" />
@@ -86,6 +93,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="SDL2-CS.dll" />
     <Content Include="SDL2.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
