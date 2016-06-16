@@ -48,6 +48,8 @@ namespace Shift
             _gameTimer = Stopwatch.StartNew();
             GameTime gameTime = new GameTime(TimeSpan.Zero, TimeSpan.Zero);
 
+            Console.WriteLine("Version: " + OpenGL.Gl.GetString(OpenGL.StringName.Version) + "!");
+
             while (Running)
             {
                 gameTime.Delta = _gameTimer.Elapsed - gameTime.Total;

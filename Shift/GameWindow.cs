@@ -135,8 +135,10 @@ namespace Shift
             );
             if (Handle == IntPtr.Zero)
                 throw new Exception(SDL.SDL_GetError());
-            var Context = SDL.SDL_GL_CreateContext(Handle);
-            SDL.SDL_GL_MakeCurrent(Handle, Context);
+            GLContext = SDL.SDL_GL_CreateContext(Handle);
+            if (Handle == IntPtr.Zero)
+                throw new Exception(SDL.SDL_GetError());
+            SDL.SDL_GL_MakeCurrent(Handle, GLContext);
         }
 
         internal void Delete()
