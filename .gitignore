@@ -1,5 +1,5 @@
 
-# Created by https://www.gitignore.io/api/visualstudio,windows,linux
+# Template created by https://www.gitignore.io/api/visualstudio,windows,linux
 
 ### VisualStudio ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -288,3 +288,11 @@ $RECYCLE.BIN/
 
 # Linux trash folder which might appear on any partition or disk
 .Trash-*
+
+### Custom ###
+
+# Doxygen
+html/
+html/ *
+latex/
+latex/*

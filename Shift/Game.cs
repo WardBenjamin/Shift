@@ -10,6 +10,7 @@ namespace Shift
     public abstract class Game
     {
         private Stopwatch _gameTimer;
+        private GameTime _gameTime;
 
         public GameWindow Window;
 
@@ -46,7 +47,7 @@ namespace Shift
             Window.Show();
 
             _gameTimer = Stopwatch.StartNew();
-            GameTime gameTime = new GameTime(TimeSpan.Zero, TimeSpan.Zero);
+            _gameTime = new GameTime(TimeSpan.Zero, TimeSpan.Zero);
 
             Console.WriteLine("Version: " + OpenGL.Gl.GetString(OpenGL.StringName.Version) + "!");
 
@@ -54,12 +55,12 @@ namespace Shift
 
             while (Running)
             {
-                gameTime.Delta = _gameTimer.Elapsed - gameTime.Total;
-                gameTime.Total = _gameTimer.Elapsed;
+                _gameTime.Delta = _gameTimer.Elapsed - _gameTime.Total;
+                _gameTime.Total = _gameTimer.Elapsed;
 
                 Platform.ProcessEvents();
-                Update(gameTime);
-                Draw(gameTime);
+                Update(_gameTime);
+                Draw(_gameTime);
                 Window.SwapBuffer();
             }
 
@@ -72,6 +73,7 @@ namespace Shift
         public void ResetElapsedTime()
         {
             _gameTimer.Restart();
+            _gameTime.Total = TimeSpan.Zero;
         }
 
         public abstract void Init();
