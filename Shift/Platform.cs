@@ -42,22 +42,6 @@ namespace Shift
             _currentOperatingSystem = GetCurrentOS();
         }
 
-
-        public static void LoadDLLs()
-        {
-            AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =>
-            {
-                string resourceName = "AssemblyLoadingAndReflection." +
-                   new AssemblyName(args.Name).Name + ".dll";
-                using (var stream = Assembly.GetExecutingAssembly().GetManifestResourceStream(resourceName))
-                {
-                    byte[] assemblyData = new byte[stream.Length];
-                    stream.Read(assemblyData, 0, assemblyData.Length);
-                    return Assembly.Load(assemblyData);
-                }
-            };
-        }
-
         public static void Init(Game game)
         {
             _game = game;

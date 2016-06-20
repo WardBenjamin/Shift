@@ -30,7 +30,6 @@ namespace Shift
 
         public Game(int width, int height, string title)
         {
-            Platform.LoadDLLs();
             Platform.Init(this);
             Window = new GameWindow(width, height, title);
             Running = true;
