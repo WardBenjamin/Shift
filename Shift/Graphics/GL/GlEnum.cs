@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 using Gl = OpenGL.Gl;
 
@@ -1139,39 +1139,6 @@ namespace Shift.Graphics.GL
         FrameBuffer = ((int)0x8D40)
     }
 
-    public enum PixelFormat : int
-    {
-        ColorIndex = ((int)0x1900),
-        StencilIndex = ((int)0x1901),
-        DepthComponent = ((int)0x1902),
-        Red = ((int)0x1903),
-        Green = ((int)0x1904),
-        Blue = ((int)0x1905),
-        Alpha = ((int)0x1906),
-        Rgb = ((int)0x1907),
-        Rgba = ((int)0x1908),
-        Luminance = ((int)0x1909),
-        LuminanceAlpha = ((int)0x190A),
-        AbgrExt = ((int)0x8000),
-        CmykExt = ((int)0x800C),
-        CmykaExt = ((int)0x800D),
-        Bgr = ((int)0x80E0),
-        Bgra = ((int)0x80E1),
-        Ycrcb422Sgix = ((int)0x81BB),
-        Ycrcb444Sgix = ((int)0x81BC),
-        Rg = ((int)0x8227),
-        RgInteger = ((int)0x8228),
-        DepthStencil = ((int)0x84F9),
-        RedInteger = ((int)0x8D94),
-        GreenInteger = ((int)0x8D95),
-        BlueInteger = ((int)0x8D96),
-        AlphaInteger = ((int)0x8D97),
-        RgbInteger = ((int)0x8D98),
-        RgbaInteger = ((int)0x8D99),
-        BgrInteger = ((int)0x8D9A),
-        BgraInteger = ((int)0x8D9B),
-    }
-
     public enum PixelInternalFormat : int
     {
         DepthComponent = ((int)0x1902),
@@ -1319,78 +1286,6 @@ namespace Shift.Graphics.GL
         Two = ((int)2),
         Three = ((int)3),
         Four = ((int)4),
-    }
-
-    public enum PixelStoreParameter : int
-    {
-        UnpackSwapBytes = ((int)0x0CF0),
-        UnpackLsbFirst = ((int)0x0CF1),
-        UnpackRowLength = ((int)0x0CF2),
-        UnpackSkipRows = ((int)0x0CF3),
-        UnpackSkipPixels = ((int)0x0CF4),
-        UnpackAlignment = ((int)0x0CF5),
-        PackSwapBytes = ((int)0x0D00),
-        PackLsbFirst = ((int)0x0D01),
-        PackRowLength = ((int)0x0D02),
-        PackSkipRows = ((int)0x0D03),
-        PackSkipPixels = ((int)0x0D04),
-        PackAlignment = ((int)0x0D05),
-        PackSkipImages = ((int)0x806B),
-        PackSkipImagesExt = ((int)0x806B),
-        PackImageHeight = ((int)0x806C),
-        PackImageHeightExt = ((int)0x806C),
-        UnpackSkipImages = ((int)0x806D),
-        UnpackSkipImagesExt = ((int)0x806D),
-        UnpackImageHeight = ((int)0x806E),
-        UnpackImageHeightExt = ((int)0x806E),
-        PackSkipVolumesSgis = ((int)0x8130),
-        PackImageDepthSgis = ((int)0x8131),
-        UnpackSkipVolumesSgis = ((int)0x8132),
-        UnpackImageDepthSgis = ((int)0x8133),
-        PixelTileWidthSgix = ((int)0x8140),
-        PixelTileHeightSgix = ((int)0x8141),
-        PixelTileGridWidthSgix = ((int)0x8142),
-        PixelTileGridHeightSgix = ((int)0x8143),
-        PixelTileGridDepthSgix = ((int)0x8144),
-        PixelTileCacheSizeSgix = ((int)0x8145),
-        PackResampleSgix = ((int)0x842C),
-        UnpackResampleSgix = ((int)0x842D),
-        PackSubsampleRateSgix = ((int)0x85A0),
-        UnpackSubsampleRateSgix = ((int)0x85A1),
-    }
-
-    public enum PixelType : int
-    {
-        Byte = ((int)0x1400),
-        UnsignedByte = ((int)0x1401),
-        Short = ((int)0x1402),
-        UnsignedShort = ((int)0x1403),
-        Int = ((int)0x1404),
-        UnsignedInt = ((int)0x1405),
-        Float = ((int)0x1406),
-        HalfFloat = ((int)0x140B),
-        Bitmap = ((int)0x1A00),
-        UnsignedByte332 = ((int)0x8032),
-        UnsignedByte332Ext = ((int)0x8032),
-        UnsignedShort4444 = ((int)0x8033),
-        UnsignedShort4444Ext = ((int)0x8033),
-        UnsignedShort5551 = ((int)0x8034),
-        UnsignedShort5551Ext = ((int)0x8034),
-        UnsignedInt8888 = ((int)0x8035),
-        UnsignedInt8888Ext = ((int)0x8035),
-        UnsignedInt1010102 = ((int)0x8036),
-        UnsignedInt1010102Ext = ((int)0x8036),
-        UnsignedByte233Reversed = ((int)0x8362),
-        UnsignedShort565 = ((int)0x8363),
-        UnsignedShort565Reversed = ((int)0x8364),
-        UnsignedShort4444Reversed = ((int)0x8365),
-        UnsignedShort1555Reversed = ((int)0x8366),
-        UnsignedInt8888Reversed = ((int)0x8367),
-        UnsignedInt2101010Reversed = ((int)0x8368),
-        UnsignedInt248 = ((int)0x84FA),
-        UnsignedInt10F11F11FRev = ((int)0x8C3B),
-        UnsignedInt5999Rev = ((int)0x8C3E),
-        Float32UnsignedInt248Rev = ((int)0x8DAD),
     }
 
     public enum PointParameterName : int
@@ -1789,50 +1684,6 @@ namespace Shift.Graphics.GL
         None = ((int)0),
         StencilIndex = ((int)0x1901),
         DepthComponent = ((int)0x1902)
-    }
-
-    public enum TextureParameterName : int
-    {
-        TextureBaseLevel = ((int)0x813C),
-        TextureBorderColor = ((int)0x1004),
-        TextureCompareMode = ((int)0x884C),
-        TextureCompareFunc = ((int)0x884D),
-        TextureLodBias = ((int)0x8501),
-        TextureMagFilter = ((int)0x2800),
-        TextureMaxLevel = ((int)0x813D),
-        TextureMaxLod = ((int)0x813B),
-        TextureMinFilter = ((int)0x2801),
-        TextureMinLod = ((int)0x813A),
-        TextureSwizzleR = ((int)0x8E42),
-        TextureSwizzleG = ((int)0x8E43),
-        TextureSwizzleB = ((int)0x8E44),
-        TextureSwizzleA = ((int)0x8E45),
-        TextureSwizzleRGBA = ((int)0x8E46),
-        TextureWrapS = ((int)0x2802),
-        TextureWrapT = ((int)0x2803),
-        TextureWrapR = ((int)0x8072)
-    }
-
-    public enum TextureTarget : int
-    {
-        Texture1D = ((int)0x0DE0),
-        Texture2D = ((int)0x0DE1),
-        Texture3D = ((int)0x806F),
-        Texture1DArray = ((int)0x8C18),
-        Texture2DArray = ((int)0x8C1A),
-        TextureRectangle = ((int)0x84F5),
-        TextureCubeMap = ((int)0x8513),
-        TextureCubeMapArray = ((int)0x9009),
-        Texture2DMultisample = ((int)0x9100),
-        Texture2DMultisampleArray = ((int)0x9102)
-    }
-
-    public enum TextureTargetMultisample : int
-    {
-        Texture2DMultisample = ((int)0x9100),
-        ProxyTexture2DMultisample = ((int)0x9101),
-        Texture2DMultisampleArray = ((int)0x9102),
-        ProxyTexture2DMultisampleArray = ((int)0x9103),
     }
 
     public enum TextureUnit : int

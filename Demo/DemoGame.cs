@@ -6,11 +6,17 @@ using System.Threading.Tasks;
 
 using Shift;
 using OpenGL;
+using Shift.Graphics;
 
 namespace Demo
 {
     class DemoGame : Game
     {
+        public override void Init()
+        {
+            //Texture t = new Texture("Content/Bitmap1.bmp");
+        }
+
         public override void Draw(GameTime time)
         {
             Gl.Viewport(0, 0, Window.ClientBounds.Width, Window.ClientBounds.Height);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
 
@@ -177,6 +177,16 @@ namespace Shift
         public Vector2 ToVector2()
         {
             return new Vector2(X, Y);
+        }
+
+        public static explicit operator System.Drawing.Point(Point p)
+        {
+            return new System.Drawing.Point(p.X, p.Y);
+        }
+
+        public static explicit operator System.Drawing.Size(Point p)
+        {
+            return new System.Drawing.Size(p.X, p.Y);
         }
     }
 }

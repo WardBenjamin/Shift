@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.Serialization;
 using System.Diagnostics;
 
@@ -479,6 +479,11 @@ namespace Shift
             result.Y = Math.Min(value1.Y, value2.Y);
             result.Width = Math.Max(value1.Right, value2.Right) - result.X;
             result.Height = Math.Max(value1.Bottom, value2.Bottom) - result.Y;
+        }
+
+        public static implicit operator System.Drawing.Rectangle(Rectangle d)
+        {
+            return new System.Drawing.Rectangle((System.Drawing.Point)d.Location, (System.Drawing.Size)d.Size);
         }
     }
 }

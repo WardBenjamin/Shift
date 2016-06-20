@@ -51,6 +51,8 @@ namespace Shift
 
             Console.WriteLine("Version: " + OpenGL.Gl.GetString(OpenGL.StringName.Version) + "!");
 
+            Init();
+
             while (Running)
             {
                 gameTime.Delta = _gameTimer.Elapsed - gameTime.Total;
@@ -73,6 +75,7 @@ namespace Shift
             _gameTimer.Restart();
         }
 
+        public abstract void Init();
         public abstract void Update(GameTime time);
         public abstract void Draw(GameTime time);
     }
