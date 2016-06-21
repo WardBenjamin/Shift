@@ -11,6 +11,7 @@ after_success:
   -d
 - chmod 0600 Documentation/travisci_rsa
 - cp Documentation/travisci_rsa ~/.ssh/id_rsa
+- cp Documentation/travisci_rsa.pub ~/.ssh/id_rsa.pub
 - Documentation/setup-doxygen.sh
 - Documentation/make-doxygen.sh
 - Documentation/publish-doxygen.sh
