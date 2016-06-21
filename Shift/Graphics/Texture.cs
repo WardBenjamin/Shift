@@ -194,7 +194,7 @@ namespace Shift.Graphics
     {
         /// <summary>The DirectDraw Surface pixel format.</summary>
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
-        public struct DDS_PIXEL_FORMAT
+        internal struct DDS_PIXEL_FORMAT
         {
             /// <summary>Size of the DDS_PIXEL_FORMAT structure.</summary>
             public int Size;
@@ -220,7 +220,7 @@ namespace Shift.Graphics
 
         /// <summary>The DirectDraw Surface descriptor.</summary>
         [StructLayout(LayoutKind.Sequential, Pack = 1)]
-        public struct DDSURFACEDESC2
+        internal struct DDSURFACEDESC2
         {
             /// <summary>The size of the DDSURFACEDESC2 structure.</summary>
             public int Size;
@@ -257,7 +257,7 @@ namespace Shift.Graphics
             private int Reserved12;
             private int Reserved13;
 
-            public static DDSURFACEDESC2 FromBinaryReader(BinaryReader stream)
+            internal static DDSURFACEDESC2 FromBinaryReader(BinaryReader stream)
             {
                 byte[] data = stream.ReadBytes(124);    // Marshal.SizeOf(typeof(DDSURFACEDESC2)));
                 GCHandle handle = GCHandle.Alloc(data, GCHandleType.Pinned);

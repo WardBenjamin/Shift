@@ -14,7 +14,7 @@ namespace Demo
     {
         public override void Init()
         {
-            //Texture t = new Texture("Content/Bitmap1.bmp");
+            Texture t = new Texture("Content/Untitled.png");
         }
 
         public override void Draw(GameTime time)
