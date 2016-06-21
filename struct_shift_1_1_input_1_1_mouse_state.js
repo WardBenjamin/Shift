@@ -1,0 +1,26 @@
+var struct_shift_1_1_input_1_1_mouse_state =
+[
+    [ "MouseState", "struct_shift_1_1_input_1_1_mouse_state.html#a2f46151b85a6ec4f9b50dbb6162cddf6", null ],
+    [ "Equals", "struct_shift_1_1_input_1_1_mouse_state.html#a1111cadde46b87430f11432c7702c94c", null ],
+    [ "GetHashCode", "struct_shift_1_1_input_1_1_mouse_state.html#a4ab939ccf39f340dfd09da27ce354311", null ],
+    [ "operator!=", "struct_shift_1_1_input_1_1_mouse_state.html#ae1361c2bb9f69bd5a813c114515084de", null ],
+    [ "operator==", "struct_shift_1_1_input_1_1_mouse_state.html#a57bbdcde378612a34734ae4ba2f3e5b1", null ],
+    [ "_leftButton", "struct_shift_1_1_input_1_1_mouse_state.html#a39dcb85c9602df4618f38bf49de1c22a", null ],
+    [ "_middleButton", "struct_shift_1_1_input_1_1_mouse_state.html#ab5afdbb4278433d8541d1ab27002f9bf", null ],
+    [ "_rightButton", "struct_shift_1_1_input_1_1_mouse_state.html#abd9eefa63650a789cdca5a2166201f27", null ],
+    [ "_scrollWheelValue", "struct_shift_1_1_input_1_1_mouse_state.html#aef0813525bf975c54eafd9e1bf0a40e0", null ],
+    [ "_x", "struct_shift_1_1_input_1_1_mouse_state.html#aa57885f32bcf3b075806431a31e59a2d", null ],
+    [ "_xButton1", "struct_shift_1_1_input_1_1_mouse_state.html#ab9eed8cb87a78f9dc81b7059d066473f", null ],
+    [ "_xButton2", "struct_shift_1_1_input_1_1_mouse_state.html#a1a0bd6d4f09ec2a7847180dcb68052e7", null ],
+    [ "_y", "struct_shift_1_1_input_1_1_mouse_state.html#ae8fa4ffde04a1d44a09e1705777c6cc4", null ],
+    [ "Default", "struct_shift_1_1_input_1_1_mouse_state.html#ae1bc9e0be06fa90289ac9f828c0cd558", null ],
+    [ "LeftButton", "struct_shift_1_1_input_1_1_mouse_state.html#a5d2665ecafec3db1dda7a381b5071dd0", null ],
+    [ "MiddleButton", "struct_shift_1_1_input_1_1_mouse_state.html#aa7e01245656d34ec65bd49052260065d", null ],
+    [ "Position", "struct_shift_1_1_input_1_1_mouse_state.html#a38238a5a18a8327628170940f2c68155", null ],
+    [ "RightButton", "struct_shift_1_1_input_1_1_mouse_state.html#a47c6a9fc294e27028bfd802a79e43d09", null ],
+    [ "ScrollWheelValue", "struct_shift_1_1_input_1_1_mouse_state.html#af54d22fba1ed4df196df2146d4c20d98", null ],
+    [ "X", "struct_shift_1_1_input_1_1_mouse_state.html#a3a8ec8db9a978231aabd696207f9d291", null ],
+    [ "XButton1", "struct_shift_1_1_input_1_1_mouse_state.html#a5ceb9d54ccf7c1bdf5af598954046bac", null ],
+    [ "XButton2", "struct_shift_1_1_input_1_1_mouse_state.html#a9cdd3ed8e1998ec22eed97b1a9f32a06", null ],
+    [ "Y", "struct_shift_1_1_input_1_1_mouse_state.html#a2312bbe985c70cbdbf787e103aa43204", null ]
+];
