@@ -35,7 +35,7 @@ var struct_shift_1_1_rectangle =
     [ "Y", "struct_shift_1_1_rectangle.html#ab06d56d5cd19c412261f315ba8c0d343", null ],
     [ "Bottom", "struct_shift_1_1_rectangle.html#a1222d9213ccec8309148943989bff010", null ],
     [ "Center", "struct_shift_1_1_rectangle.html#a9f5793ff7710d7c03258c8cfebb05808", null ],
-    [ "DebugDisplayString", "struct_shift_1_1_rectangle.html#a767f68dd8aa933e20b1a5bc1f656cf76", null ],
+    [ "DebugDisplayString", "struct_shift_1_1_rectangle.html#ac81db1d0355bc76410a498856bb08f10", null ],
     [ "Empty", "struct_shift_1_1_rectangle.html#a960e12e66683e8c5212aad23b819935a", null ],
     [ "IsEmpty", "struct_shift_1_1_rectangle.html#a7223034ceed9266533d3a6a0a6b1b5d1", null ],
     [ "Left", "struct_shift_1_1_rectangle.html#aab4b4291309c04da390285e126e08523", null ],

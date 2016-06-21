@@ -56,6 +56,6 @@ var struct_shift_1_1_quaternion =
     [ "X", "struct_shift_1_1_quaternion.html#a16c2f7da9f4b10f7b79c39ee08175219", null ],
     [ "Y", "struct_shift_1_1_quaternion.html#a1589979af3a6341132c323b135fb3db7", null ],
     [ "Z", "struct_shift_1_1_quaternion.html#a258aa8bfd79b0d5b9e3556768fefcccb", null ],
-    [ "DebugDisplayString", "struct_shift_1_1_quaternion.html#a89b3c2c5454b52cb3f72226b5cf00376", null ],
+    [ "DebugDisplayString", "struct_shift_1_1_quaternion.html#a8faf46b5f77c3725b6b2ba8c520770c2", null ],
     [ "Identity", "struct_shift_1_1_quaternion.html#ae7768f492af2e7d32b5ef379df701cb1", null ]
 ];

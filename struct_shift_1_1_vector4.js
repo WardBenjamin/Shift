@@ -81,7 +81,7 @@ var struct_shift_1_1_vector4 =
     [ "X", "struct_shift_1_1_vector4.html#a34f7a720ad49350da89857acf545757b", null ],
     [ "Y", "struct_shift_1_1_vector4.html#a501f716d17179bfffc68ed8bcf7dfc06", null ],
     [ "Z", "struct_shift_1_1_vector4.html#ae15118401d91c115a2080c4f565fe5a6", null ],
-    [ "DebugDisplayString", "struct_shift_1_1_vector4.html#a4dd39ff2040e1130f79a8a4a4fa9e7e5", null ],
+    [ "DebugDisplayString", "struct_shift_1_1_vector4.html#a1f950ce5a8aec7fea92cdb45f0ee2746", null ],
     [ "One", "struct_shift_1_1_vector4.html#ad6d9f95f54434e0e944e91ec6c72c536", null ],
     [ "UnitW", "struct_shift_1_1_vector4.html#a127486f950b19135271d226b9c7a5493", null ],
     [ "UnitX", "struct_shift_1_1_vector4.html#ac7cd8a52a784e548bb48f4a11e38ceaf", null ],

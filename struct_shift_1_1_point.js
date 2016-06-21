@@ -17,6 +17,6 @@ var struct_shift_1_1_point =
     [ "ToVector2", "struct_shift_1_1_point.html#ab7c21acb369eea8315cb10db2c1bdd81", null ],
     [ "X", "struct_shift_1_1_point.html#a35047b34151c360bdbf3bb3182f4bd5d", null ],
     [ "Y", "struct_shift_1_1_point.html#a0902f5e9487865391b8d138601c6fe2e", null ],
-    [ "DebugDisplayString", "struct_shift_1_1_point.html#aecbe9069f6d203a9f90f54f9c5a0069b", null ],
+    [ "DebugDisplayString", "struct_shift_1_1_point.html#a0dc662145507c9e414b252bdde9af776", null ],
     [ "Zero", "struct_shift_1_1_point.html#af3a9495f6abc82eee10f4a424891a29b", null ]
 ];

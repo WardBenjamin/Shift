@@ -1,6 +1,5 @@
 var struct_shift_1_1_input_1_1_keyboard_state =
 [
-    [ "KeyboardState", "struct_shift_1_1_input_1_1_keyboard_state.html#a9c821b21169bf2955521608c9ea4f16d", null ],
     [ "KeyboardState", "struct_shift_1_1_input_1_1_keyboard_state.html#a863880bc441b1ef9212c365eea743335", null ],
     [ "KeyboardState", "struct_shift_1_1_input_1_1_keyboard_state.html#aa1d805246d5ef7a27c42cbd3f9b05ac0", null ],
     [ "Equals", "struct_shift_1_1_input_1_1_keyboard_state.html#a75d870874467f76574fb840cc9526f7e", null ],
