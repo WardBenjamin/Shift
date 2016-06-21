@@ -1,0 +1,16 @@
+language: csharp
+solution: Shift.sln
+before_install:
+- sudo apt-get install --yes doxygen graphviz
+after_success:
+- openssl aes-256-cbc 
+  -K $encrypted_31d4dbf0621e_key 
+  -iv $encrypted_31d4dbf0621e_iv
+  -in Documentation/travisci_rsa.enc 
+  -out Documentation/travisci_rsa 
+  -d
+- chmod 0600 Documentation/travisci_rsa
+- cp Documentation/travisci_rsa ~/.ssh/id_rsa
+- Documentation/setup-doxygen.sh
+- Documentation/make-doxygen.sh
+- Documentation/publish-doxygen.sh

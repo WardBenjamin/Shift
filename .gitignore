@@ -293,6 +293,10 @@ $RECYCLE.BIN/
 
 # Doxygen
 html/
-html/ *
+html/*
+*/html/
+*/html/*
 latex/
 latex/*
+*/latex/
+*/latex/*
