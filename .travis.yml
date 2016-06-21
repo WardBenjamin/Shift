@@ -6,4 +6,4 @@ before_install:
 - sudo apt-get install --yes graphviz
 - sudo apt-get install --yes --no-install-recommends doxygen
 after_success:
- - Documentation/build-docs.sh
+ - bash Documentation/build-docs.sh
