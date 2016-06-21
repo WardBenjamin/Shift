@@ -22,5 +22,6 @@ var searchData=
   ['keys7',['keys7',['../struct_shift_1_1_input_1_1_keyboard_state.html#a18d97c07deaa948a8d9c6f6d8ad71c75',1,'Shift::Input::KeyboardState']]],
   ['keystate',['KeyState',['../namespace_shift_1_1_input.html#ad413ca2e1a66fcdaeb865ca8cdf597a8',1,'Shift::Input']]],
   ['keystate_2ecs',['KeyState.cs',['../_key_state_8cs.html',1,'']]],
-  ['keyword',['Keyword',['../class_shift_1_1_graphics_1_1_g_l_1_1_g_l_s_l_lexer.html#afda464228802fd4473605c9a1c901b31a220f3d3750583b9db48568a0b5b9a5f1',1,'Shift::Graphics::GL::GLSLLexer']]]
+  ['keyword',['Keyword',['../class_shift_1_1_graphics_1_1_g_l_1_1_g_l_s_l_lexer.html#afda464228802fd4473605c9a1c901b31a220f3d3750583b9db48568a0b5b9a5f1',1,'Shift::Graphics::GL::GLSLLexer']]],
+  ['khaki',['Khaki',['../struct_shift_1_1_color.html#af27ecfa2bde11909c7658bf8919fbb9a',1,'Shift::Color']]]
 ];

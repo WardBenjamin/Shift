@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['height',['Height',['../struct_shift_1_1_graphics_1_1_d_d_s_1_1_d_d_s_u_r_f_a_c_e_d_e_s_c2.html#a23d87989d0d6cd6491e165d272db0f66',1,'Shift.Graphics.DDS.DDSURFACEDESC2.Height()'],['../struct_shift_1_1_rectangle.html#ac002a6e66d69f53aa5f7cfcd10987af6',1,'Shift.Rectangle.Height()']]]
+  ['pi',['Pi',['../class_shift_1_1_math_helper.html#a90854c9ad0f4422fef74a8e484a12214',1,'Shift::MathHelper']]],
+  ['piover2',['PiOver2',['../class_shift_1_1_math_helper.html#af99598e645f8950fe0c4d769bca00f1f',1,'Shift::MathHelper']]],
+  ['piover4',['PiOver4',['../class_shift_1_1_math_helper.html#ad156a81a946de6cbce3614d0cd0c242b',1,'Shift::MathHelper']]]
 ];

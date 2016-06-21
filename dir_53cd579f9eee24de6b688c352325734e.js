@@ -5,6 +5,9 @@ var dir_53cd579f9eee24de6b688c352325734e =
     [ "Math", "dir_87361101588a34244e41819e39d6d6a4.html", "dir_87361101588a34244e41819e39d6d6a4" ],
     [ "obj", "dir_2300e0361046d2a3e92efe5332e64455.html", "dir_2300e0361046d2a3e92efe5332e64455" ],
     [ "Properties", "dir_a7da62c71a212a48d156994ffe2c3b31.html", "dir_a7da62c71a212a48d156994ffe2c3b31" ],
+    [ "Color.cs", "_color_8cs.html", [
+      [ "Color", "struct_shift_1_1_color.html", "struct_shift_1_1_color" ]
+    ] ],
     [ "Game.cs", "_game_8cs.html", [
       [ "Game", "class_shift_1_1_game.html", "class_shift_1_1_game" ]
     ] ],

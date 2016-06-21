@@ -4,6 +4,8 @@ var searchData=
   ['name',['Name',['../class_shift_1_1_graphics_1_1_g_l_1_1_program_param.html#a9bf55dae1fe38921270a59c1878a1fd0',1,'Shift::Graphics::GL::ProgramParam']]],
   ['namelength',['NameLength',['../namespace_shift_1_1_graphics_1_1_g_l.html#a47cc205723fb7559e78ff2614f8f7bf6a5891ab3ddddf8f97806e0aecfc3495a5',1,'Shift::Graphics::GL']]],
   ['nand',['Nand',['../namespace_shift_1_1_graphics_1_1_g_l.html#a181a2e124f2adbfe580232056d07bb56ad39e2d62791eb0c18e0bb54315180049',1,'Shift::Graphics::GL']]],
+  ['navajowhite',['NavajoWhite',['../struct_shift_1_1_color.html#a62f02f9aefff176108d08b253fe430b5',1,'Shift::Color']]],
+  ['navy',['Navy',['../struct_shift_1_1_color.html#af9f07ae56efc89bd3e88bdbe0fc25a55',1,'Shift::Color']]],
   ['nearest',['Nearest',['../namespace_shift_1_1_graphics_1_1_g_l.html#a6373fd2a61d939b5571ace7c69556f59a60494f02d440f316319dd0fad40ad007',1,'Shift.Graphics.GL.Nearest()'],['../namespace_shift_1_1_graphics_1_1_g_l.html#ae8d4105ddb21a7bdc33ca902af9826fca60494f02d440f316319dd0fad40ad007',1,'Shift.Graphics.GL.Nearest()']]],
   ['nearestmipmaplinear',['NearestMipMapLinear',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae8d4105ddb21a7bdc33ca902af9826fca2ab89052e482e215464f54f02afb8c61',1,'Shift::Graphics::GL']]],
   ['nearestmipmapnearest',['NearestMipMapNearest',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae8d4105ddb21a7bdc33ca902af9826fca530870c2564db93b93a41eddf4c9ed66',1,'Shift::Graphics::GL']]],

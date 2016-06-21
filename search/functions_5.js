@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['frombinaryreader',['FromBinaryReader',['../struct_shift_1_1_graphics_1_1_d_d_s_1_1_d_d_s_u_r_f_a_c_e_d_e_s_c2.html#a77144173f0306a82e97f72feca3f8e0a',1,'Shift::Graphics::DDS::DDSURFACEDESC2']]]
+  ['fromnonpremultiplied',['FromNonPremultiplied',['../struct_shift_1_1_color.html#a0c17beb75337b3ae12966d5f4c35cd59',1,'Shift.Color.FromNonPremultiplied(Vector4 vector)'],['../struct_shift_1_1_color.html#a79969777d1b608493fda27b5e542b313',1,'Shift.Color.FromNonPremultiplied(int r, int g, int b, int a)']]]
 ];

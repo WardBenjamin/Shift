@@ -1,6 +1,20 @@
 var searchData=
 [
-  ['right',['Right',['../struct_shift_1_1_matrix.html#aee8f26504cf50f0b096fb1d0ea993e8e',1,'Shift.Matrix.Right()'],['../struct_shift_1_1_rectangle.html#a691ff1b4679803479bd7f627b2e4b59e',1,'Shift.Rectangle.Right()'],['../struct_shift_1_1_vector3.html#abe422e37777cdd369eadd7872358070f',1,'Shift.Vector3.Right()']]],
-  ['rightbutton',['RightButton',['../struct_shift_1_1_input_1_1_mouse_state.html#a47c6a9fc294e27028bfd802a79e43d09',1,'Shift::Input::MouseState']]],
-  ['rotation',['Rotation',['../struct_shift_1_1_matrix.html#a761ecb2de0758b9edf6ff624d9ca9ea9',1,'Shift::Matrix']]]
+  ['magenta',['Magenta',['../struct_shift_1_1_color.html#a2cf037194683e56cce5518e2f9d85b37',1,'Shift::Color']]],
+  ['maroon',['Maroon',['../struct_shift_1_1_color.html#ae8a920f6addd93637307b78a9cee5ed6',1,'Shift::Color']]],
+  ['mediumaquamarine',['MediumAquamarine',['../struct_shift_1_1_color.html#ac2daf0d284dfa1d60949c028430672d7',1,'Shift::Color']]],
+  ['mediumblue',['MediumBlue',['../struct_shift_1_1_color.html#a3954b2ce689ac65cf5da61564e6a355c',1,'Shift::Color']]],
+  ['mediumorchid',['MediumOrchid',['../struct_shift_1_1_color.html#aa22cb911a3dd8b8f6a03de5b6c546a7f',1,'Shift::Color']]],
+  ['mediumpurple',['MediumPurple',['../struct_shift_1_1_color.html#a2e331cc7b3153661f0207dc2693f4244',1,'Shift::Color']]],
+  ['mediumseagreen',['MediumSeaGreen',['../struct_shift_1_1_color.html#a8e10555876eb367f36bee1a6697065ce',1,'Shift::Color']]],
+  ['mediumslateblue',['MediumSlateBlue',['../struct_shift_1_1_color.html#aa2fbacb45c5b524e639843af8cad7af8',1,'Shift::Color']]],
+  ['mediumspringgreen',['MediumSpringGreen',['../struct_shift_1_1_color.html#acf11a979d5150dfda7fe72341d9fec45',1,'Shift::Color']]],
+  ['mediumturquoise',['MediumTurquoise',['../struct_shift_1_1_color.html#a864064d6e82e57d50a5921b13d67e659',1,'Shift::Color']]],
+  ['mediumvioletred',['MediumVioletRed',['../struct_shift_1_1_color.html#a3290d39cde388dfa43c0fb42ee64da2a',1,'Shift::Color']]],
+  ['middlebutton',['MiddleButton',['../struct_shift_1_1_input_1_1_mouse_state.html#aa7e01245656d34ec65bd49052260065d',1,'Shift::Input::MouseState']]],
+  ['midnightblue',['MidnightBlue',['../struct_shift_1_1_color.html#ab52796553b922f85289356d0eb87910f',1,'Shift::Color']]],
+  ['mintcream',['MintCream',['../struct_shift_1_1_color.html#aa75b4b3711ed3044cb733c377fe25321',1,'Shift::Color']]],
+  ['mistyrose',['MistyRose',['../struct_shift_1_1_color.html#adfa5f506a649e426b527a6b718a9532d',1,'Shift::Color']]],
+  ['moccasin',['Moccasin',['../struct_shift_1_1_color.html#a13d0ad270699b7716896bc7422cfed10',1,'Shift::Color']]],
+  ['monogameorange',['MonoGameOrange',['../struct_shift_1_1_color.html#ad335ddd7a3ba3a407d5c78a61cfddd90',1,'Shift::Color']]]
 ];

@@ -10,6 +10,8 @@ var searchData=
   ['incrwrap',['IncrWrap',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae75840d1ff75d600a2aebe5457b6e654a893d5395c39e90eca72ccb89e2e90312',1,'Shift::Graphics::GL']]],
   ['indexarray',['IndexArray',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae79ebf789481052d2c648c7593d6004caacaaf217c6534c34b63edcbbf5b422d5',1,'Shift::Graphics::GL']]],
   ['indexlogicop',['IndexLogicOp',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae79ebf789481052d2c648c7593d6004cacec3bcefe50cc87500ff93c6aaaab25e',1,'Shift::Graphics::GL']]],
+  ['indianred',['IndianRed',['../struct_shift_1_1_color.html#a314c63186d782f06f379371ee6fcc138',1,'Shift::Color']]],
+  ['indigo',['Indigo',['../struct_shift_1_1_color.html#a0931e1a5dd3f41a63ef727f243a89345',1,'Shift::Color']]],
   ['inflate',['Inflate',['../struct_shift_1_1_rectangle.html#a494b8fba85ac94f2688a1ac0ba501291',1,'Shift.Rectangle.Inflate(int horizontalAmount, int verticalAmount)'],['../struct_shift_1_1_rectangle.html#a7a66b47e1ca32d160e1043a4099b99e5',1,'Shift.Rectangle.Inflate(float horizontalAmount, float verticalAmount)']]],
   ['infologlength',['InfoLogLength',['../namespace_shift_1_1_graphics_1_1_g_l.html#a3ddfd9da6a4f7360b991099f9cdac1f1aa5ab80c7fc0b3053cf8b6ebbe0de0525',1,'Shift.Graphics.GL.InfoLogLength()'],['../namespace_shift_1_1_graphics_1_1_g_l.html#a2042f1fbafbf0dd45447aa193c3e1082aa5ab80c7fc0b3053cf8b6ebbe0de0525',1,'Shift.Graphics.GL.InfoLogLength()']]],
   ['init',['Init',['../class_shift_1_1_game.html#a8d4cd95a92e73a6946f2821a3cd2147f',1,'Shift.Game.Init()'],['../class_shift_1_1_platform.html#a20a4a07e6f30abe5960398d55e5b5327',1,'Shift.Platform.Init()']]],
@@ -59,5 +61,6 @@ var searchData=
   ['iskeyup',['IsKeyUp',['../struct_shift_1_1_input_1_1_keyboard_state.html#a94f175b65e96add845917ceafb9dc509',1,'Shift::Input::KeyboardState']]],
   ['isperpatch',['IsPerPatch',['../namespace_shift_1_1_graphics_1_1_g_l.html#a47cc205723fb7559e78ff2614f8f7bf6aa3265bf6436da2f6f403865f3e2ed6f4',1,'Shift::Graphics::GL']]],
   ['ispoweroftwo',['IsPowerOfTwo',['../class_shift_1_1_math_helper.html#a8673733c58305c9e3a835655be8a02fd',1,'Shift::MathHelper']]],
-  ['isrowmajor',['IsRowMajor',['../namespace_shift_1_1_graphics_1_1_g_l.html#a47cc205723fb7559e78ff2614f8f7bf6ac5930a1eafa237523d217881086cba9b',1,'Shift::Graphics::GL']]]
+  ['isrowmajor',['IsRowMajor',['../namespace_shift_1_1_graphics_1_1_g_l.html#a47cc205723fb7559e78ff2614f8f7bf6ac5930a1eafa237523d217881086cba9b',1,'Shift::Graphics::GL']]],
+  ['ivory',['Ivory',['../struct_shift_1_1_color.html#ac207c79921705f4104daee7f10ee9aa9',1,'Shift::Color']]]
 ];

@@ -1,4 +1,26 @@
 var searchData=
 [
-  ['empty',['Empty',['../struct_shift_1_1_rectangle.html#a960e12e66683e8c5212aad23b819935a',1,'Shift::Rectangle']]]
+  ['darkblue',['DarkBlue',['../struct_shift_1_1_color.html#aba54fff4e012e87b86f8464cb6f52959',1,'Shift::Color']]],
+  ['darkcyan',['DarkCyan',['../struct_shift_1_1_color.html#a3967801b94ffa4497934e7d252f1bc40',1,'Shift::Color']]],
+  ['darkgoldenrod',['DarkGoldenrod',['../struct_shift_1_1_color.html#add6abc8d6b1fa9440d28e6e6255c0390',1,'Shift::Color']]],
+  ['darkgray',['DarkGray',['../struct_shift_1_1_color.html#a4c2afad4185b7028cee0f33c872d4a96',1,'Shift::Color']]],
+  ['darkgreen',['DarkGreen',['../struct_shift_1_1_color.html#ad4c50e404f53c7470adac48815d98dbd',1,'Shift::Color']]],
+  ['darkkhaki',['DarkKhaki',['../struct_shift_1_1_color.html#ae18f1af2a87e0a9bd3b149a770a6833b',1,'Shift::Color']]],
+  ['darkmagenta',['DarkMagenta',['../struct_shift_1_1_color.html#a75d8cfcfcc75e783f891158c89c4efcd',1,'Shift::Color']]],
+  ['darkolivegreen',['DarkOliveGreen',['../struct_shift_1_1_color.html#a0159f510b83cc891a911c5981a626207',1,'Shift::Color']]],
+  ['darkorange',['DarkOrange',['../struct_shift_1_1_color.html#a93fcf3830126cf519705281395c8d100',1,'Shift::Color']]],
+  ['darkorchid',['DarkOrchid',['../struct_shift_1_1_color.html#a6bbc9a5a9a13ecc7c0e45890e8f97ee7',1,'Shift::Color']]],
+  ['darkred',['DarkRed',['../struct_shift_1_1_color.html#af941b81b2d54b8c8427be6e8451ac63b',1,'Shift::Color']]],
+  ['darksalmon',['DarkSalmon',['../struct_shift_1_1_color.html#a9fbffdbe1c5a6079d64846e1bf1c6ce1',1,'Shift::Color']]],
+  ['darkseagreen',['DarkSeaGreen',['../struct_shift_1_1_color.html#a495db1e508f54030c6ae228ddb8f626e',1,'Shift::Color']]],
+  ['darkslateblue',['DarkSlateBlue',['../struct_shift_1_1_color.html#a3f9d778ce079fb1c9729f55874818bc6',1,'Shift::Color']]],
+  ['darkslategray',['DarkSlateGray',['../struct_shift_1_1_color.html#a555b2a4bd82f0ab87cf81964aa3ade17',1,'Shift::Color']]],
+  ['darkturquoise',['DarkTurquoise',['../struct_shift_1_1_color.html#a49f10fc82dc788478a4a7a0a1f0197e4',1,'Shift::Color']]],
+  ['darkviolet',['DarkViolet',['../struct_shift_1_1_color.html#a5bf9b569781e11fe4c573fab20ffeac2',1,'Shift::Color']]],
+  ['deeppink',['DeepPink',['../struct_shift_1_1_color.html#a94bd25c86e8d742401bec99489832a13',1,'Shift::Color']]],
+  ['deepskyblue',['DeepSkyBlue',['../struct_shift_1_1_color.html#a73b3ef9c1ad28652e2de7f30bae8aa01',1,'Shift::Color']]],
+  ['dimgray',['DimGray',['../struct_shift_1_1_color.html#a3c7924258aaa336b7b6770cbf6f34d7b',1,'Shift::Color']]],
+  ['disposechildren',['DisposeChildren',['../class_shift_1_1_graphics_1_1_g_l_1_1_shader_program.html#ad800e3c52993f03b80e424b48b450e13',1,'Shift::Graphics::GL::ShaderProgram']]],
+  ['dodgerblue',['DodgerBlue',['../struct_shift_1_1_color.html#a3f7900f13422b4fcf7268c07b8208f53',1,'Shift::Color']]],
+  ['down',['Down',['../struct_shift_1_1_matrix.html#a2d6d351c5259cbf5d030bfefe581c7ce',1,'Shift.Matrix.Down()'],['../struct_shift_1_1_vector3.html#af4137d585e0c9a31018b870f11b51e35',1,'Shift.Vector3.Down()']]]
 ];

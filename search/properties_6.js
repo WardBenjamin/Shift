@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['left',['Left',['../struct_shift_1_1_matrix.html#a22a5f7de5bb8d81e45758bb6fee7cade',1,'Shift.Matrix.Left()'],['../struct_shift_1_1_rectangle.html#aab4b4291309c04da390285e126e08523',1,'Shift.Rectangle.Left()'],['../struct_shift_1_1_vector3.html#a37533f82cb1d2eae9399907dc16cbdec',1,'Shift.Vector3.Left()']]],
-  ['leftbutton',['LeftButton',['../struct_shift_1_1_input_1_1_mouse_state.html#a5d2665ecafec3db1dda7a381b5071dd0',1,'Shift::Input::MouseState']]],
-  ['linenumber',['LineNumber',['../class_shift_1_1_graphics_1_1_g_l_1_1_g_l_s_l_lexer_1_1_token.html#ab1af52d99b62e7b5e052aa7fb01867cf',1,'Shift.Graphics.GL.GLSLLexer.Token.LineNumber()'],['../class_shift_1_1_graphics_1_1_g_l_1_1_g_l_s_l_lexer_1_1_line.html#a6605ba7fd17c7d28aa4d91ffed054bb1',1,'Shift.Graphics.GL.GLSLLexer.Line.LineNumber()']]],
-  ['location',['Location',['../class_shift_1_1_graphics_1_1_g_l_1_1_program_param.html#ab926662bde1024c4b948a2690ad6ffa2',1,'Shift.Graphics.GL.ProgramParam.Location()'],['../struct_shift_1_1_rectangle.html#a717f766cb374581fb01c98fa70446aa7',1,'Shift.Rectangle.Location()']]]
+  ['g',['G',['../struct_shift_1_1_color.html#a7ca1cd7649061f18a07c96a4ca54f180',1,'Shift::Color']]],
+  ['gainsboro',['Gainsboro',['../struct_shift_1_1_color.html#a7d1bb70406c8353a0407b898222bd395',1,'Shift::Color']]],
+  ['ghostwhite',['GhostWhite',['../struct_shift_1_1_color.html#a3aa75ae4546165ec9059b33345a024c0',1,'Shift::Color']]],
+  ['gold',['Gold',['../struct_shift_1_1_color.html#a35403595aec87712f56368bd815cac98',1,'Shift::Color']]],
+  ['goldenrod',['Goldenrod',['../struct_shift_1_1_color.html#afbc6aa2ab6f3db23432d25dd488b375d',1,'Shift::Color']]],
+  ['gray',['Gray',['../struct_shift_1_1_color.html#a9b72e4a171d4b6f4c26e2318ba8390e6',1,'Shift::Color']]],
+  ['green',['Green',['../struct_shift_1_1_color.html#ae3a80680026481d142ee4ad3711364d3',1,'Shift::Color']]],
+  ['greenyellow',['GreenYellow',['../struct_shift_1_1_color.html#a70524d06ce994b5e9f7d537e5fbbaab6',1,'Shift::Color']]]
 ];

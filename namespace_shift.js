@@ -2,6 +2,7 @@ var namespace_shift =
 [
     [ "Graphics", "namespace_shift_1_1_graphics.html", "namespace_shift_1_1_graphics" ],
     [ "Input", "namespace_shift_1_1_input.html", "namespace_shift_1_1_input" ],
+    [ "Color", "struct_shift_1_1_color.html", "struct_shift_1_1_color" ],
     [ "Game", "class_shift_1_1_game.html", "class_shift_1_1_game" ],
     [ "GameTime", "class_shift_1_1_game_time.html", "class_shift_1_1_game_time" ],
     [ "GameWindow", "class_shift_1_1_game_window.html", "class_shift_1_1_game_window" ],

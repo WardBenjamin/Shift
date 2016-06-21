@@ -1,7 +1,5 @@
 var hierarchy =
 [
-    [ "Shift.Graphics.DDS.DDS_PIXEL_FORMAT", "struct_shift_1_1_graphics_1_1_d_d_s_1_1_d_d_s___p_i_x_e_l___f_o_r_m_a_t.html", null ],
-    [ "Shift.Graphics.DDS.DDSURFACEDESC2", "struct_shift_1_1_graphics_1_1_d_d_s_1_1_d_d_s_u_r_f_a_c_e_d_e_s_c2.html", null ],
     [ "Shift.Game", "class_shift_1_1_game.html", null ],
     [ "Shift.Input.GamePad", "class_shift_1_1_input_1_1_game_pad.html", null ],
     [ "Shift.GameTime", "class_shift_1_1_game_time.html", null ],
@@ -13,6 +11,9 @@ var hierarchy =
       [ "Shift.Graphics.GL.Shader", "class_shift_1_1_graphics_1_1_g_l_1_1_shader.html", null ],
       [ "Shift.Graphics.GL.ShaderProgram", "class_shift_1_1_graphics_1_1_g_l_1_1_shader_program.html", null ],
       [ "Shift.Graphics.Texture", "class_shift_1_1_graphics_1_1_texture.html", null ]
+    ] ],
+    [ "IEquatable< Color >", null, [
+      [ "Shift.Color", "struct_shift_1_1_color.html", null ]
     ] ],
     [ "IEquatable< Matrix >", null, [
       [ "Shift.Matrix", "struct_shift_1_1_matrix.html", null ]

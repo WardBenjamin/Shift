@@ -21,7 +21,7 @@ var NAVTREE =
         [ "Variables", "functions_vars.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ],
-        [ "Properties", "functions_prop.html", null ]
+        [ "Properties", "functions_prop.html", "functions_prop" ]
       ] ]
     ] ],
     [ "Files", null, [
@@ -37,16 +37,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_8_n_e_t_framework_00_version_0Av4_85_82_8_assembly_attribute_8cs.html",
-"_gl_enum_8cs.html#a3ffb3a2bf334fa184f4d3e9380dea7d8a2d9324285e337dbb5bba85f6f4486f10",
-"_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacab8c96e3c34048516a0c334d1b8b828f1",
-"_gl_enum_8cs.html#a9b22e33f573bf324b063ae7eb97e2468af666961fd3f122d43c101404d1aba5bf",
-"_gl_enum_8cs.html#adf3b958ac22fdb59ab9026884f9d694ca927bf7e7ceb0289ab3ec3d7bf91e7cf0",
-"_gl_enum_8cs.html#ae032bada7e489dcf34becaf25024fb2eae36209cbeab3219b29b6174b27c00aa2",
-"_gl_enum_8cs.html#ae79ebf789481052d2c648c7593d6004ca9c824882bd09ff00f7ab9f649bf9d528",
-"_keys_8cs.html#a72c59dd5d465e6efa20223b439a4b928ae7e0e72401a9f2718ed0f39f2861d702",
-"functions_func_r.html",
-"struct_shift_1_1_matrix.html#ae356b7d046cc3b464faf8e8431d07171",
-"struct_shift_1_1_vector3.html#a0745a253569241f262da80fd2c731906"
+"_gl_enum_8cs.html#a3ffb3a2bf334fa184f4d3e9380dea7d8",
+"_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacaa86fe54f76987f32457afabe330a6132",
+"_gl_enum_8cs.html#a9b22e33f573bf324b063ae7eb97e2468ad5e768ed224bde24f9d620e81556992f",
+"_gl_enum_8cs.html#adf3b958ac22fdb59ab9026884f9d694ca8c200e4df96ac4d4bb69fbc73796af0a",
+"_gl_enum_8cs.html#ae032bada7e489dcf34becaf25024fb2eae2dbd154aef1e99f0c02db800565d930",
+"_gl_enum_8cs.html#ae79ebf789481052d2c648c7593d6004ca98082e2a5d213fe50c2f49f6d181b276",
+"_keys_8cs.html#a72c59dd5d465e6efa20223b439a4b928ae409cf9af5cfc28aed6cf45ac0edf435",
+"functions_func_p.html",
+"struct_shift_1_1_color.html#ab2e88d7ec226a1079661b9258b92ac1a",
+"struct_shift_1_1_point.html#a5dfeedf35960d7eb5f5b08fad4a2018c",
+"struct_shift_1_1_vector3.html#a8c3a6ec69b43556c380d75937f17721f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

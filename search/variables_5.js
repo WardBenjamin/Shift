@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['e',['E',['../class_shift_1_1_math_helper.html#a7346d29eaed77a39e4f47474270da6eb',1,'Shift::MathHelper']]],
-  ['empty',['empty',['../struct_shift_1_1_input_1_1_keyboard_state.html#a736fc44842dcdaf64f4e62d4f2b988e0',1,'Shift::Input::KeyboardState']]]
+  ['log10e',['Log10E',['../class_shift_1_1_math_helper.html#a35ba0d91568647fae6310750da7f9ffa',1,'Shift::MathHelper']]],
+  ['log2e',['Log2E',['../class_shift_1_1_math_helper.html#a3bfcd754481aebd1d56db58fdcc5e994',1,'Shift::MathHelper']]]
 ];

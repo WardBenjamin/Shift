@@ -34,6 +34,7 @@ var searchData=
   ['viewportboundsrange',['ViewportBoundsRange',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea5f9d23ac0eac8da62b7a6f63fb3dda86',1,'Shift::Graphics::GL']]],
   ['viewportindexprovokingvertex',['ViewportIndexProvokingVertex',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea9e325772df0f8f32abf71f228b0ee18a',1,'Shift::Graphics::GL']]],
   ['viewportsubpixelbits',['ViewportSubpixelBits',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2eaff83a5d0b46c2d39556d5a4956aabe33',1,'Shift::Graphics::GL']]],
+  ['violet',['Violet',['../struct_shift_1_1_color.html#a63f54d7ae51d762eddceb7bbc13e7f8c',1,'Shift::Color']]],
   ['volumedown',['VolumeDown',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928a91f1f883ea91306f79dbf0ca1b108bad',1,'Shift::Input']]],
   ['volumemute',['VolumeMute',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928a98e0efccef4b465cb0edb78d2ddc4eed',1,'Shift::Input']]],
   ['volumeup',['VolumeUp',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928af5311ec6ce071e43882685428cc9d56a',1,'Shift::Input']]]

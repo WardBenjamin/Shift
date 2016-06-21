@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['pi',['Pi',['../class_shift_1_1_math_helper.html#a90854c9ad0f4422fef74a8e484a12214',1,'Shift::MathHelper']]],
-  ['piover2',['PiOver2',['../class_shift_1_1_math_helper.html#af99598e645f8950fe0c4d769bca00f1f',1,'Shift::MathHelper']]],
-  ['piover4',['PiOver4',['../class_shift_1_1_math_helper.html#ad156a81a946de6cbce3614d0cd0c242b',1,'Shift::MathHelper']]],
-  ['pixelformat',['PixelFormat',['../struct_shift_1_1_graphics_1_1_d_d_s_1_1_d_d_s_u_r_f_a_c_e_d_e_s_c2.html#a8b689b037fd0054eb547956aa39602cb',1,'Shift::Graphics::DDS::DDSURFACEDESC2']]]
+  ['y',['Y',['../struct_shift_1_1_point.html#a0902f5e9487865391b8d138601c6fe2e',1,'Shift.Point.Y()'],['../struct_shift_1_1_quaternion.html#a1589979af3a6341132c323b135fb3db7',1,'Shift.Quaternion.Y()'],['../struct_shift_1_1_rectangle.html#ab06d56d5cd19c412261f315ba8c0d343',1,'Shift.Rectangle.Y()'],['../struct_shift_1_1_vector2.html#a6bfa309f51c674059ad8dbb8330dd1b1',1,'Shift.Vector2.Y()'],['../struct_shift_1_1_vector3.html#a0745a253569241f262da80fd2c731906',1,'Shift.Vector3.Y()'],['../struct_shift_1_1_vector4.html#a501f716d17179bfffc68ed8bcf7dfc06',1,'Shift.Vector4.Y()']]]
 ];
