@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -99,8 +99,7 @@ namespace Shift.Graphics.GL
 
         public void SetValue(int param)
         {
-            // TODO: Texture support
-            if (Type != typeof(int) /*&& Type != typeof(Texture)*/) throw new Exception(string.Format("SetValue({0}) was given a int.", Type));
+            if (Type != typeof(int) && Type != typeof(Texture)) throw new Exception(string.Format("SetValue({0}) was given a int.", Type));
             Gl.Uniform1(location, param);
         }
 
@@ -140,6 +139,16 @@ namespace Shift.Graphics.GL
             if (param.Length != 16) throw new Exception(string.Format("Expected a float[] of 16 for a Matrix, but instead got {0}.", param.Length));
             Gl.UniformMatrix4(location, 1, false, param);
         }
+    }
+
+    public enum ShaderType : int
+    {
+        FragmentShader = Gl.FRAGMENT_SHADER,
+        VertexShader = Gl.VERTEX_SHADER,
+        GeometryShader = Gl.GEOMETRY_SHADER,
+        TessControlShader = Gl.TESS_CONTROL_SHADER,
+        TessEvaluationShader = Gl.TESS_EVALUATION_SHADER,
+        ComputeShader = Gl.COMPUTE_SHADER
     }
 
     public class Shader : IDisposable
@@ -209,7 +218,7 @@ namespace Shift.Graphics.GL
                 case "sampler1dshadow":
                 case "sampler3d":
                 case "sampler2darray":
-                case "sampler2darrayshadow": /*return typeof(Texture);*/ // TODO: Texture support
+                case "sampler2darrayshadow": return typeof(Texture);
                 default: throw new Exception(string.Format("Unsupported GLSL type {0}", type));
             }
         }

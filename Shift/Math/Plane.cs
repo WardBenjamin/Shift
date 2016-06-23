@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
 
@@ -8,6 +8,11 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Plane : IEquatable<Plane>
     {
+        /// <summary>
+        /// Defines the size of the Plane struct in bytes.
+        /// </summary>
+        public static readonly int SizeInBytes = System.Runtime.InteropServices.Marshal.SizeOf(new Plane());
+
         [DataMember]
         public float D;
 

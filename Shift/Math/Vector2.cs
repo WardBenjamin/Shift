@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
 
@@ -11,22 +11,15 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Vector2 : IEquatable<Vector2>
     {
+        /// <summary>
+        /// Defines the size of the Vector2 struct in bytes.
+        /// </summary>
+        public static readonly int SizeInBytes = System.Runtime.InteropServices.Marshal.SizeOf(new Vector2());
+
         private static readonly Vector2 zeroVector = new Vector2(0f, 0f);
         private static readonly Vector2 unitVector = new Vector2(1f, 1f);
         private static readonly Vector2 unitXVector = new Vector2(1f, 0f);
         private static readonly Vector2 unitYVector = new Vector2(0f, 1f);
-
-        /// <summary>
-        /// The x coordinate of this <see cref="Vector2"/>.
-        /// </summary>
-        [DataMember]
-        public float X;
-
-        /// <summary>
-        /// The y coordinate of this <see cref="Vector2"/>.
-        /// </summary>
-        [DataMember]
-        public float Y;
 
         /// <summary>
         /// Returns a <see cref="Vector2"/> with components 0, 0.
@@ -59,6 +52,18 @@ namespace Shift
         {
             get { return unitYVector; }
         }
+
+        /// <summary>
+        /// The x coordinate of this <see cref="Vector2"/>.
+        /// </summary>
+        [DataMember]
+        public float X;
+
+        /// <summary>
+        /// The y coordinate of this <see cref="Vector2"/>.
+        /// </summary>
+        [DataMember]
+        public float Y;
 
         internal string DebugDisplayString
         {

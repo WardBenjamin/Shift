@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
 using System.Text;
@@ -12,6 +12,11 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Vector3 : IEquatable<Vector3>
     {
+        /// <summary>
+        /// Defines the size of the Vector3 struct in bytes.
+        /// </summary>
+        public static readonly int SizeInBytes = System.Runtime.InteropServices.Marshal.SizeOf(new Vector3());
+
         private static readonly Vector3 zero = new Vector3(0f, 0f, 0f);
         private static readonly Vector3 one = new Vector3(1f, 1f, 1f);
         private static readonly Vector3 unitX = new Vector3(1f, 0f, 0f);
@@ -23,24 +28,6 @@ namespace Shift
         private static readonly Vector3 left = new Vector3(-1f, 0f, 0f);
         private static readonly Vector3 forward = new Vector3(0f, 0f, -1f);
         private static readonly Vector3 backward = new Vector3(0f, 0f, 1f);
-
-        /// <summary>
-        /// The x coordinate of this <see cref="Vector3"/>.
-        /// </summary>
-        [DataMember]
-        public float X;
-
-        /// <summary>
-        /// The y coordinate of this <see cref="Vector3"/>.
-        /// </summary>
-        [DataMember]
-        public float Y;
-
-        /// <summary>
-        /// The z coordinate of this <see cref="Vector3"/>.
-        /// </summary>
-        [DataMember]
-        public float Z;
 
         /// <summary>
         /// Returns a <see cref="Vector3"/> with components 0, 0, 0.
@@ -129,6 +116,24 @@ namespace Shift
         {
             get { return backward; }
         }
+
+        /// <summary>
+        /// The x coordinate of this <see cref="Vector3"/>.
+        /// </summary>
+        [DataMember]
+        public float X;
+
+        /// <summary>
+        /// The y coordinate of this <see cref="Vector3"/>.
+        /// </summary>
+        [DataMember]
+        public float Y;
+
+        /// <summary>
+        /// The z coordinate of this <see cref="Vector3"/>.
+        /// </summary>
+        [DataMember]
+        public float Z;
 
         internal string DebugDisplayString
         {

@@ -12,6 +12,11 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Color : IEquatable<Color>
     {
+        /// <summary>
+        /// Defines the size of the Color struct in bytes.
+        /// </summary>
+        public static readonly int SizeInBytes = System.Runtime.InteropServices.Marshal.SizeOf(new Color());
+
         static Color()
         {
             TransparentBlack = new Color(0);

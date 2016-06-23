@@ -11,7 +11,20 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Point : IEquatable<Point>
     {
+        /// <summary>
+        /// Defines the size of the Point struct in bytes.
+        /// </summary>
+        public static readonly int SizeInBytes = System.Runtime.InteropServices.Marshal.SizeOf(new Point());
+
         private static readonly Point zeroPoint = new Point();
+
+        /// <summary>
+        /// Returns a <see cref="Point"/> with coordinates 0, 0.
+        /// </summary>
+        public static Point Zero
+        {
+            get { return zeroPoint; }
+        }
 
         /// <summary>
         /// The x coordinate of this <see cref="Point"/>.
@@ -24,14 +37,6 @@ namespace Shift
         /// </summary>
         [DataMember]
         public int Y;
-
-        /// <summary>
-        /// Returns a <see cref="Point"/> with coordinates 0, 0.
-        /// </summary>
-        public static Point Zero
-        {
-            get { return zeroPoint; }
-        }
 
         internal string DebugDisplayString
         {

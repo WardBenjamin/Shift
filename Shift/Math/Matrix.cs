@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
@@ -12,6 +12,11 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Matrix : IEquatable<Matrix>
     {
+        /// <summary>
+        /// Defines the size of the Matrix struct in bytes.
+        /// </summary>
+        public static readonly int SizeInBytes = System.Runtime.InteropServices.Marshal.SizeOf(new Matrix());
+
         /// <summary>
         /// Constructs a matrix.
         /// </summary>

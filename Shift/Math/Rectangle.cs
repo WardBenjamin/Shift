@@ -11,7 +11,20 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Rectangle : IEquatable<Rectangle>
     {
+        /// <summary>
+        /// Defines the size of the Rectangle struct in bytes.
+        /// </summary>
+        public static readonly int SizeInBytes = System.Runtime.InteropServices.Marshal.SizeOf(new Rectangle());
+
         private static Rectangle emptyRectangle = new Rectangle();
+
+        /// <summary>
+        /// Returns a <see cref="Rectangle"/> with X=0, Y=0, Width=0, Height=0.
+        /// </summary>
+        public static Rectangle Empty
+        {
+            get { return emptyRectangle; }
+        }
 
         /// <summary>
         /// The x coordinate of the top-left corner of this <see cref="Rectangle"/>.
@@ -36,14 +49,6 @@ namespace Shift
         /// </summary>
         [DataMember]
         public int Height;
-
-        /// <summary>
-        /// Returns a <see cref="Rectangle"/> with X=0, Y=0, Width=0, Height=0.
-        /// </summary>
-        public static Rectangle Empty
-        {
-            get { return emptyRectangle; }
-        }
 
         /// <summary>
         /// Returns the x coordinate of the left edge of this <see cref="Rectangle"/>.

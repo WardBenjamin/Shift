@@ -4,7 +4,7 @@ using Gl = OpenGL.Gl;
 
 namespace Shift.Graphics.GL
 {
-    public enum ActiveAttribType : int
+    internal enum ActiveAttribType : int
     {
         Float = ((int)0x1406),
         FloatVec2 = ((int)0x8B50),
@@ -15,7 +15,7 @@ namespace Shift.Graphics.GL
         FloatMat4 = ((int)0x8B5C),
     }
 
-    public enum ActiveUniformBlockParameter : int
+    internal enum ActiveUniformBlockParameter : int
     {
         UniformBlockBinding = ((int)0x8A3F),
         UniformBlockDataSize = ((int)0x8A40),
@@ -26,7 +26,7 @@ namespace Shift.Graphics.GL
         UniformBlockReferencedByFragmentShader = ((int)0x8A46),
     }
 
-    public enum ActiveUniformType : int
+    internal enum ActiveUniformType : int
     {
         Int = ((int)0x1404),
         Float = ((int)0x1406),
@@ -90,7 +90,7 @@ namespace Shift.Graphics.GL
         UnsignedIntSampler2DMultisampleArray = ((int)0x910D),
     }
 
-    public enum ArbSync : int
+    internal enum ArbSync : int
     {
         SyncFlushCommandsBit = ((int)0x00000001),
         MaxServerWaitTimeout = ((int)0x9111),
@@ -109,7 +109,7 @@ namespace Shift.Graphics.GL
         TimeoutIgnored = unchecked((int)0xFFFFFFFFFFFFFFFF),
     }
 
-    public enum AtomicCounterParameterName : int
+    internal enum AtomicCounterParameterName : int
     {
         AtomicCounterBufferBinding = ((int)0x92C1),
         AtomicCounterBufferDataSize = ((int)0x92C4),
@@ -123,14 +123,14 @@ namespace Shift.Graphics.GL
         AtomicCounterBufferReferencedByComputeShader = ((int)0x90ED)
     }
 
-    public enum BeginFeedbackMode : int
+    internal enum BeginFeedbackMode : int
     {
         Points = ((int)0x0000),
         Lines = ((int)0x0001),
         Triangles = ((int)0x0004),
     }
 
-    public enum BeginMode : int
+    internal enum BeginMode : int
     {
         Points = ((int)0x0000),
         Lines = ((int)0x0001),
@@ -150,7 +150,7 @@ namespace Shift.Graphics.GL
         QuadStrip = ((int)0x0008)
     }
 
-    public enum BlendEquationMode : int
+    internal enum BlendEquationMode : int
     {
         FuncAdd = ((int)0x8006),
         Min = ((int)0x8007),
@@ -159,7 +159,7 @@ namespace Shift.Graphics.GL
         FuncReverseSubtract = ((int)0x800B),
     }
 
-    public enum BlendingFactorDest : int
+    internal enum BlendingFactorDest : int
     {
         Zero = ((int)0),
         SrcColor = ((int)0x0300),
@@ -181,7 +181,7 @@ namespace Shift.Graphics.GL
         One = ((int)1),
     }
 
-    public enum BlendingFactorSrc : int
+    internal enum BlendingFactorSrc : int
     {
         Zero = ((int)0),
         SrcAlpha = ((int)0x0302),
@@ -202,13 +202,13 @@ namespace Shift.Graphics.GL
         One = ((int)1),
     }
 
-    public enum BlitFramebufferFilter : int
+    internal enum BlitFramebufferFilter : int
     {
         Nearest = ((int)0x2600),
         Linear = ((int)0x2601),
     }
 
-    public enum BufferAccess : int
+    internal enum BufferAccess : int
     {
         ReadOnly = ((int)0x88B8),
         WriteOnly = ((int)0x88B9),
@@ -216,7 +216,7 @@ namespace Shift.Graphics.GL
     }
 
     [Flags]
-    public enum BufferAccessMask : int
+    internal enum BufferAccessMask : int
     {
         MapReadBit = ((int)0x0001),
         MapWriteBit = ((int)0x0002),
@@ -226,7 +226,7 @@ namespace Shift.Graphics.GL
         MapUnsynchronizedBit = ((int)0x0020),
     }
 
-    public enum BufferParameterName : int
+    internal enum BufferParameterName : int
     {
         BufferSize = ((int)0x8764),
         BufferUsage = ((int)0x8765),
@@ -234,30 +234,12 @@ namespace Shift.Graphics.GL
         BufferMapped = ((int)0x88BC),
     }
 
-    public enum BufferPointer : int
+    internal enum BufferPointer : int
     {
         BufferMapPointer = ((int)0x88BD),
     }
 
-    public enum BufferTarget : int
-    {
-        ArrayBuffer = ((int)0x8892),
-        ElementArrayBuffer = ((int)0x8893),
-        PixelPackBuffer = ((int)0x88EB),
-        PixelUnpackBuffer = ((int)0x88EC),
-        UniformBuffer = ((int)0x8A11),
-        TextureBuffer = ((int)0x8C2A),
-        TransformFeedbackBuffer = ((int)0x8C8E),
-        CopyReadBuffer = ((int)0x8F36),
-        CopyWriteBuffer = ((int)0x8F37),
-        DrawIndirectBuffer = ((int)0x8F3F),
-        AtomicCounterBuffer = ((int)0x92C0),
-        DispatchIndirectBuffer = ((int)0x90EE),
-        QueryBuffer = ((int)0x9192),
-        ShaderStorageBuffer = ((int)0x90D2),
-    }
-
-    public enum BufferUsageHint : int
+    internal enum BufferUsageHint : int
     {
         StreamDraw = ((int)0x88E0),
         StreamRead = ((int)0x88E1),
@@ -270,21 +252,21 @@ namespace Shift.Graphics.GL
         DynamicCopy = ((int)0x88EA),
     }
 
-    public enum ClampColorMode : int
+    internal enum ClampColorMode : int
     {
         False = ((int)0),
         FixedOnly = ((int)0x891D),
         True = ((int)1),
     }
 
-    public enum ClampColorTarget : int
+    internal enum ClampColorTarget : int
     {
         ClampVertexColor = ((int)0x891A),
         ClampFragmentColor = ((int)0x891B),
         ClampReadColor = ((int)0x891C),
     }
 
-    public enum ClearBuffer : int
+    internal enum ClearBuffer : int
     {
         Color = ((int)0x1800),
         Depth = ((int)0x1801),
@@ -293,7 +275,7 @@ namespace Shift.Graphics.GL
     }
 
     [Flags]
-    public enum ClearBufferMask : int
+    internal enum ClearBufferMask : int
     {
         DepthBufferBit = ((int)0x00000100),
         AccumBufferBit = ((int)0x00000200),
@@ -301,19 +283,19 @@ namespace Shift.Graphics.GL
         ColorBufferBit = ((int)0x00004000),
     }
 
-    public enum ClipControlOrigin : int
+    internal enum ClipControlOrigin : int
     {
         LowerLeft = ((int)0x8CA1),
         UpperLeft = ((int)0x8CA2)
     }
 
-    public enum ClipControlDepth : int
+    internal enum ClipControlDepth : int
     {
         NegativeOneToOne = ((int)0x935E),
         ZeroToOne = ((int)0x935F)
     }
 
-    public enum ConditionalRenderType : int
+    internal enum ConditionalRenderType : int
     {
         QueryWait = ((int)0x8E13),
         QueryNoWait = ((int)0x8E14),
@@ -321,14 +303,14 @@ namespace Shift.Graphics.GL
         QueryByRegionNoWait = ((int)0x8E16),
     }
 
-    public enum CullFaceMode : int
+    internal enum CullFaceMode : int
     {
         Front = ((int)0x0404),
         Back = ((int)0x0405),
         FrontAndBack = ((int)0x0408),
     }
 
-    public enum DepthFunction : int
+    internal enum DepthFunction : int
     {
         Never = ((int)0x0200),
         Less = ((int)0x0201),
@@ -340,7 +322,7 @@ namespace Shift.Graphics.GL
         Always = ((int)0x0207),
     }
 
-    public enum DrawBuffersEnum : int
+    internal enum DrawBuffersEnum : int
     {
         None = ((int)0),
         FrontLeft = ((int)0x0400),
@@ -369,7 +351,7 @@ namespace Shift.Graphics.GL
         ColorAttachment15 = ((int)0x8CEF),
     }
 
-    public enum DrawBufferMode : int
+    internal enum DrawBufferMode : int
     {
         None = ((int)0),
         FrontLeft = ((int)0x0400),
@@ -403,14 +385,14 @@ namespace Shift.Graphics.GL
         ColorAttachment15 = ((int)0x8CEF),
     }
 
-    public enum DrawElementsType : int
+    internal enum DrawElementsType : int
     {
         UnsignedByte = ((int)0x1401),
         UnsignedShort = ((int)0x1403),
         UnsignedInt = ((int)0x1405),
     }
 
-    public enum EnableCap : int
+    internal enum EnableCap : int
     {
         //PointSmooth = ((int)0x0B10),
         LineSmooth = ((int)0x0B20),
@@ -545,7 +527,7 @@ namespace Shift.Graphics.GL
         PrimitiveRestart = ((int)0x8F9D),
     }
 
-    public enum ErrorCode : int
+    internal enum ErrorCode : int
     {
         NoError = ((int)0),
         InvalidEnum = ((int)0x0500),
@@ -560,7 +542,7 @@ namespace Shift.Graphics.GL
         TextureTooLargeExt = ((int)0x8065),
     }
 
-    public enum FramebufferAttachment : int
+    internal enum FramebufferAttachment : int
     {
         DepthStencilAttachment = ((int)0x821A),
         ColorAttachment0 = ((int)0x8CE0),
@@ -601,7 +583,7 @@ namespace Shift.Graphics.GL
         StencilAttachmentExt = ((int)0x8D20),
     }
 
-    public enum FramebufferErrorCode : int
+    internal enum FramebufferErrorCode : int
     {
         FramebufferUndefined = ((int)0x8219),
         FramebufferComplete = ((int)0x8CD5),
@@ -623,7 +605,7 @@ namespace Shift.Graphics.GL
         FramebufferIncompleteLayerCount = ((int)0x8DA9),
     }
 
-    public enum FramebufferPName : int
+    internal enum FramebufferPName : int
     {
         FramebufferDefaultWidth = ((int)0x9310),
         FramebufferDefaultHeight = ((int)0x9311),
@@ -632,7 +614,7 @@ namespace Shift.Graphics.GL
         FramebufferDefaultFixedSampleLocations = ((int)0x9314)
     }
 
-    public enum FramebufferParameterName : int
+    internal enum FramebufferParameterName : int
     {
         FramebufferAttachmentColorEncoding = ((int)0x8210),
         FramebufferAttachmentComponentType = ((int)0x8211),
@@ -655,7 +637,7 @@ namespace Shift.Graphics.GL
         FramebufferAttachmentLayered = ((int)0x8DA7),
     }
 
-    public enum FramebufferTarget : int
+    internal enum FramebufferTarget : int
     {
         ReadFramebuffer = ((int)0x8CA8),
         DrawFramebuffer = ((int)0x8CA9),
@@ -663,13 +645,13 @@ namespace Shift.Graphics.GL
         FramebufferExt = ((int)0x8D40),
     }
 
-    public enum FrontFaceDirection : int
+    internal enum FrontFaceDirection : int
     {
         Cw = ((int)0x0900),
         Ccw = ((int)0x0901),
     }
 
-    public enum GenerateMipmapTarget : int
+    internal enum GenerateMipmapTarget : int
     {
         Texture1D = ((int)0x0DE0),
         Texture2D = ((int)0x0DE1),
@@ -681,12 +663,12 @@ namespace Shift.Graphics.GL
         Texture2DMultisampleArray = ((int)0x9102),
     }
 
-    public enum GetMultisamplePName : int
+    internal enum GetMultisamplePName : int
     {
         SamplePosition = ((int)0x8E50),
     }
 
-    public enum GetPName : int
+    internal enum GetPName : int
     {
         ActiveTexture = ((int)0x84E0),
         AliasedLineWidthRange = ((int)0x846E),
@@ -940,25 +922,25 @@ namespace Shift.Graphics.GL
         MaxElementIndex = ((int)0x8D6B)
     }
 
-    public enum GetPointerParameter : int
+    internal enum GetPointerParameter : int
     {
         DebugCallbackFunction = ((int)0x8244),
         DebugCallbackUserParam = ((int)0x8245)
     }
 
-    public enum GetQueryObjectParam : int
+    internal enum GetQueryObjectParam : int
     {
         QueryResult = ((int)0x8866),
         QueryResultAvailable = ((int)0x8867),
     }
 
-    public enum GetQueryParam : int
+    internal enum GetQueryParam : int
     {
         QueryCounterBits = ((int)0x8864),
         CurrentQuery = ((int)0x8865),
     }
 
-    public enum GetTextureParameter : int
+    internal enum GetTextureParameter : int
     {
         TextureWidth = ((int)0x1000),
         TextureHeight = ((int)0x1001),
@@ -1040,7 +1022,7 @@ namespace Shift.Graphics.GL
         TextureBufferOffset = ((int)0x919D)
     }
 
-    public enum GetTextureLevelParameter : int
+    internal enum GetTextureLevelParameter : int
     {
         TextureWidth = ((int)0x1000),
         TextureHeight = ((int)0x1001),
@@ -1056,7 +1038,7 @@ namespace Shift.Graphics.GL
         TextureBufferOffset = ((int)0x919D)
     }
 
-    public enum GraphicResetStatus : int
+    internal enum GraphicResetStatus : int
     {
         NoError = ((int)0),
         GuiltyContextReset = ((int)0x8253),
@@ -1064,14 +1046,14 @@ namespace Shift.Graphics.GL
         UnknownContextReset = ((int)0x8255)
     }
 
-    public enum HintMode : int
+    internal enum HintMode : int
     {
         DontCare = ((int)0x1100),
         Fastest = ((int)0x1101),
         Nicest = ((int)0x1102),
     }
 
-    public enum HintTarget : int
+    internal enum HintTarget : int
     {
         PerspectiveCorrectionHint = ((int)0x0C50),
         PointSmoothHint = ((int)0x0C51),
@@ -1089,7 +1071,7 @@ namespace Shift.Graphics.GL
         FragmentShaderDerivativeHint = ((int)0x8B8B),
     }
 
-    public enum LogicOp : int
+    internal enum LogicOp : int
     {
         Clear = ((int)0x1500),
         And = ((int)0x1501),
@@ -1109,14 +1091,14 @@ namespace Shift.Graphics.GL
         Set = ((int)0x150F),
     }
 
-    public enum MaterialFace : int
+    internal enum MaterialFace : int
     {
         Front = ((int)0x0404),
         Back = ((int)0x0405),
         FrontAndBack = ((int)0x0408),
     }
 
-    public enum NvTransformFeedback2 : int
+    internal enum NvTransformFeedback2 : int
     {
         TransformFeedbackNv = ((int)0x8E22),
         TransformFeedbackBufferPausedNv = ((int)0x8E23),
@@ -1124,7 +1106,7 @@ namespace Shift.Graphics.GL
         TransformFeedbackBindingNv = ((int)0x8E25),
     }
 
-    public enum ObjectLabel : int
+    internal enum ObjectLabel : int
     {
         Buffer = ((int)0x82E0),
         Shader = ((int)0x82E1),
@@ -1139,7 +1121,7 @@ namespace Shift.Graphics.GL
         FrameBuffer = ((int)0x8D40)
     }
 
-    public enum PixelInternalFormat : int
+    internal enum PixelInternalFormat : int
     {
         DepthComponent = ((int)0x1902),
         Alpha = ((int)0x1906),
@@ -1288,7 +1270,7 @@ namespace Shift.Graphics.GL
         Four = ((int)4),
     }
 
-    public enum PointParameterName : int
+    internal enum PointParameterName : int
     {
         PointSizeMin = ((int)0x8126),
         PointSizeMax = ((int)0x8127),
@@ -1297,14 +1279,14 @@ namespace Shift.Graphics.GL
         PointSpriteCoordOrigin = ((int)0x8CA0),
     }
 
-    public enum PolygonMode : int
+    internal enum PolygonMode : int
     {
         Point = ((int)0x1B00),
         Line = ((int)0x1B01),
         Fill = ((int)0x1B02),
     }
 
-    public enum ProgramInterface : int
+    internal enum ProgramInterface : int
     {
         Uniform = ((int)0x92E1),
         UniformBlock = ((int)0x92E2),
@@ -1329,7 +1311,7 @@ namespace Shift.Graphics.GL
         TransformFeedbackBuffer = ((int)0x8C8E)
     }
 
-    public enum ProgramInterfaceParameterName : int
+    internal enum ProgramInterfaceParameterName : int
     {
         ActiveResources = ((int)0x92F5),
         MaxNameLength = ((int)0x92F6),
@@ -1337,7 +1319,7 @@ namespace Shift.Graphics.GL
         MaxNumCompatibleSubroutines = ((int)0x92F8)
     }
 
-    public enum ProgramParameter : int
+    internal enum ProgramParameter : int
     {
         ActiveUniformBlockMaxNameLength = ((int)0x8A35),
         ActiveUniformBlocks = ((int)0x8A36),
@@ -1358,7 +1340,7 @@ namespace Shift.Graphics.GL
         GeometryOutputType = ((int)0x8DDC),
     }
 
-    public enum ProgramResourceParameterName : int
+    internal enum ProgramResourceParameterName : int
     {
         NameLength = ((int)0x92F9),
         Type = ((int)0x92FA),
@@ -1392,7 +1374,7 @@ namespace Shift.Graphics.GL
         TransformFeedbackBufferStride = ((int)0x934C)
     }
 
-    public enum ProgramStageParameterName : int
+    internal enum ProgramStageParameterName : int
     {
         ActiveSubroutineUniforms = ((int)0x8DE6),
         ActiveSubroutineUniformLocations = ((int)0x8E47),
@@ -1401,13 +1383,13 @@ namespace Shift.Graphics.GL
         ActiveSubroutineMaxLength = ((int)0x8E48)
     }
 
-    public enum ProvokingVertexMode : int
+    internal enum ProvokingVertexMode : int
     {
         FirstVertexConvention = ((int)0x8E4D),
         LastVertexConvention = ((int)0x8E4E),
     }
 
-    public enum QueryTarget : int
+    internal enum QueryTarget : int
     {
         SamplesPassed = ((int)0x8914),
         PrimitivesGenerated = ((int)0x8C87),
@@ -1418,7 +1400,7 @@ namespace Shift.Graphics.GL
         TimeStamp = ((int)0x8E28),
     }
 
-    public enum ReadBufferMode : int
+    internal enum ReadBufferMode : int
     {
         None = ((int)0x0000),
         FrontLeft = ((int)0x0400),
@@ -1451,7 +1433,7 @@ namespace Shift.Graphics.GL
         ColorAttachment15 = ((int)0x8CEF),
     }
 
-    public enum RenderbufferParameterName : int
+    internal enum RenderbufferParameterName : int
     {
         RenderbufferSamples = ((int)0x8CAB),
         RenderbufferWidth = ((int)0x8D42),
@@ -1474,7 +1456,7 @@ namespace Shift.Graphics.GL
         RenderbufferStencilSizeExt = ((int)0x8D55),
     }
 
-    public enum RenderbufferStorage : int
+    internal enum RenderbufferStorage : int
     {
         R3G3B2 = ((int)0x2A10),
         Alpha4 = ((int)0x803B),
@@ -1549,13 +1531,13 @@ namespace Shift.Graphics.GL
         Rgb8i = ((int)0x8D8F),
     }
 
-    public enum RenderbufferTarget : int
+    internal enum RenderbufferTarget : int
     {
         Renderbuffer = ((int)0x8D41),
         RenderbufferExt = ((int)0x8D41),
     }
 
-    public enum ShaderParameter : int
+    internal enum ShaderParameter : int
     {
         ShaderType = ((int)0x8B4F),
         DeleteStatus = ((int)0x8B80),
@@ -1564,17 +1546,7 @@ namespace Shift.Graphics.GL
         ShaderSourceLength = ((int)0x8B88),
     }
 
-    public enum ShaderType : int
-    {
-        FragmentShader = Gl.FRAGMENT_SHADER,
-        VertexShader = Gl.VERTEX_SHADER,
-        GeometryShader = Gl.GEOMETRY_SHADER,
-        TessControlShader = Gl.TESS_CONTROL_SHADER,
-        TessEvaluationShader = Gl.TESS_EVALUATION_SHADER,
-        ComputeShader = Gl.COMPUTE_SHADER
-    }
-
-    public enum SizedInternalFormat : int
+    internal enum SizedInternalFormat : int
     {
         Rgba8 = ((int)0x8058),
         Rgba16 = ((int)0x805B),
@@ -1608,14 +1580,14 @@ namespace Shift.Graphics.GL
         Rgba8i = ((int)0x8D8E),
     }
 
-    public enum StencilFace : int
+    internal enum StencilFace : int
     {
         Front = ((int)0x0404),
         Back = ((int)0x0405),
         FrontAndBack = ((int)0x0408),
     }
 
-    public enum StencilFunction : int
+    internal enum StencilFunction : int
     {
         Never = ((int)0x0200),
         Less = ((int)0x0201),
@@ -1627,7 +1599,7 @@ namespace Shift.Graphics.GL
         Always = ((int)0x0207),
     }
 
-    public enum StencilOp : int
+    internal enum StencilOp : int
     {
         Zero = ((int)0),
         Invert = ((int)0x150A),
@@ -1639,7 +1611,7 @@ namespace Shift.Graphics.GL
         DecrWrap = ((int)0x8508),
     }
 
-    public enum StringName : int
+    internal enum StringName : int
     {
         Vendor = ((int)0x1F00),
         Renderer = ((int)0x1F01),
@@ -1648,7 +1620,7 @@ namespace Shift.Graphics.GL
         ShadingLanguageVersion = ((int)0x8B8C),
     }
 
-    public enum SubroutineParameterName : int
+    internal enum SubroutineParameterName : int
     {
         NumCompatibleSubroutines = ((int)0x8E4A),
         CompatibleSubroutines = ((int)0x8E4B),
@@ -1656,12 +1628,12 @@ namespace Shift.Graphics.GL
         UniformNameLength = ((int)0x8A39)
     }
 
-    public enum TextureBufferTarget : int
+    internal enum TextureBufferTarget : int
     {
         TextureBuffer = ((int)0x8C2A),
     }
 
-    public enum TextureParameter : int
+    internal enum TextureParameter : int
     {
         Nearest = ((int)0x2600),
         Linear = ((int)0x2601),
@@ -1686,7 +1658,7 @@ namespace Shift.Graphics.GL
         DepthComponent = ((int)0x1902)
     }
 
-    public enum TextureUnit : int
+    internal enum TextureUnit : int
     {
         Texture0 = ((int)0x84C0),
         Texture1 = ((int)0x84C1),
@@ -1722,13 +1694,13 @@ namespace Shift.Graphics.GL
         Texture31 = ((int)0x84DF),
     }
 
-    public enum TransformFeedbackMode : int
+    internal enum TransformFeedbackMode : int
     {
         InterleavedAttribs = ((int)0x8C8C),
         SeparateAttribs = ((int)0x8C8D),
     }
 
-    public enum TransformFeedbackParameterName : int
+    internal enum TransformFeedbackParameterName : int
     {
         TransformFeedbackBufferBinding = ((int)0x8C8F),
         TransformFeedbackBufferStart = ((int)0x8C84),
@@ -1737,7 +1709,7 @@ namespace Shift.Graphics.GL
         TransformFeedbackActive = ((int)0x8E24)
     }
 
-    public enum Version32 : int
+    internal enum Version32 : int
     {
         ContextCoreProfileBit = ((int)0x00000001),
         SyncFlushCommandsBit = ((int)0x00000001),
@@ -1807,7 +1779,7 @@ namespace Shift.Graphics.GL
         TimeoutIgnored = unchecked((int)0xFFFFFFFFFFFFFFFF),
     }
 
-    public enum VertexAttribParameter : int
+    internal enum VertexAttribParameter : int
     {
         ArrayEnabled = ((int)0x8622),
         ArraySize = ((int)0x8623),
@@ -1821,12 +1793,12 @@ namespace Shift.Graphics.GL
         RelativeOffset = ((int)0x82D5)
     }
 
-    public enum VertexAttribPointerParameter : int
+    internal enum VertexAttribPointerParameter : int
     {
         ArrayPointer = ((int)0x8645),
     }
 
-    public enum VertexAttribFormat : int
+    internal enum VertexAttribFormat : int
     {
         Byte = ((int)0x1400),
         UnsignedByte = ((int)0x1401),
@@ -1842,23 +1814,8 @@ namespace Shift.Graphics.GL
         UnsignedUInt101111Reversed = ((int)0x8C3B)
     }
 
-    public enum VertexAttribPType : int
+    internal enum VertexAttribPType : int
     {
-        UnsignedUInt2101010Reversed = ((int)0x8368),
-        UnsignedInt2101010Reversed = ((int)0x8D9F)
-    }
-
-    public enum VertexAttribPointerType : int
-    {
-        Byte = ((int)0x1400),
-        UnsignedByte = ((int)0x1401),
-        Short = ((int)0x1402),
-        UnsignedShort = ((int)0x1403),
-        Int = ((int)0x1404),
-        UnsignedInt = ((int)0x1405),
-        Float = ((int)0x1406),
-        Double = ((int)0x140A),
-        HalfFloat = ((int)0x140B),
         UnsignedUInt2101010Reversed = ((int)0x8368),
         UnsignedInt2101010Reversed = ((int)0x8D9F)
     }

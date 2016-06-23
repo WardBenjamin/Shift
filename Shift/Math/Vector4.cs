@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.Serialization;
 using System.Diagnostics;
 
@@ -11,36 +11,17 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Vector4 : IEquatable<Vector4>
     {
+        /// <summary>
+        /// Defines the size of the Vector4 struct in bytes.
+        /// </summary>
+        public static readonly int SizeInBytes = System.Runtime.InteropServices.Marshal.SizeOf(new Vector4());
+
         private static readonly Vector4 zero = new Vector4();
         private static readonly Vector4 one = new Vector4(1f, 1f, 1f, 1f);
         private static readonly Vector4 unitX = new Vector4(1f, 0f, 0f, 0f);
         private static readonly Vector4 unitY = new Vector4(0f, 1f, 0f, 0f);
         private static readonly Vector4 unitZ = new Vector4(0f, 0f, 1f, 0f);
         private static readonly Vector4 unitW = new Vector4(0f, 0f, 0f, 1f);
-
-        /// <summary>
-        /// The x coordinate of this <see cref="Vector4"/>.
-        /// </summary>
-        [DataMember]
-        public float X;
-
-        /// <summary>
-        /// The y coordinate of this <see cref="Vector4"/>.
-        /// </summary>
-        [DataMember]
-        public float Y;
-
-        /// <summary>
-        /// The z coordinate of this <see cref="Vector4"/>.
-        /// </summary>
-        [DataMember]
-        public float Z;
-
-        /// <summary>
-        /// The w coordinate of this <see cref="Vector4"/>.
-        /// </summary>
-        [DataMember]
-        public float W;
 
         /// <summary>
         /// Returns a <see cref="Vector4"/> with components 0, 0, 0, 0.
@@ -89,6 +70,30 @@ namespace Shift
         {
             get { return unitW; }
         }
+
+        /// <summary>
+        /// The x coordinate of this <see cref="Vector4"/>.
+        /// </summary>
+        [DataMember]
+        public float X;
+
+        /// <summary>
+        /// The y coordinate of this <see cref="Vector4"/>.
+        /// </summary>
+        [DataMember]
+        public float Y;
+
+        /// <summary>
+        /// The z coordinate of this <see cref="Vector4"/>.
+        /// </summary>
+        [DataMember]
+        public float Z;
+
+        /// <summary>
+        /// The w coordinate of this <see cref="Vector4"/>.
+        /// </summary>
+        [DataMember]
+        public float W;
 
         internal string DebugDisplayString
         {

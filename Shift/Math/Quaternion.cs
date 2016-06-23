@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using System.Runtime.Serialization;
 
@@ -11,7 +11,20 @@ namespace Shift
     [DebuggerDisplay("{DebugDisplayString,nq}")]
     public struct Quaternion : IEquatable<Quaternion>
     {
+        /// <summary>
+        /// Defines the size of the Quaternion struct in bytes.
+        /// </summary>
+        public static readonly int SizeInBytes = System.Runtime.InteropServices.Marshal.SizeOf(new Quaternion());
+
         private static readonly Quaternion _identity = new Quaternion(0, 0, 0, 1);
+
+        /// <summary>
+        /// Returns a quaternion representing no rotation.
+        /// </summary>
+        public static Quaternion Identity
+        {
+            get { return _identity; }
+        }
 
         /// <summary>
         /// The x coordinate of this <see cref="Quaternion"/>.
@@ -75,14 +88,6 @@ namespace Shift
             this.Y = value.Y;
             this.Z = value.Z;
             this.W = value.W;
-        }
-
-        /// <summary>
-        /// Returns a quaternion representing no rotation.
-        /// </summary>
-        public static Quaternion Identity
-        {
-            get { return _identity; }
         }
 
         internal string DebugDisplayString

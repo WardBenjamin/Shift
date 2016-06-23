@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Color.cs" />
     <Compile Include="GameTime.cs" />
     <Compile Include="GameWindow.cs" />
     <Compile Include="Graphics\GL\GlEnum.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Graphics\GL\Shader.cs" />
     <Compile Include="Graphics\SpriteBatch.cs" />
     <Compile Include="Graphics\Texture.cs" />
+    <Compile Include="Graphics\TextureRegion.cs" />
     <Compile Include="Input\States\ButtonState.cs" />
     <Compile Include="Input\GamePad.cs" />
     <Compile Include="Input\Joystick.cs" />
@@ -101,6 +103,9 @@
     <Content Include="SDL2.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Graphics\GL\Constructs\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

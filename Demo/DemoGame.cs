@@ -12,9 +12,12 @@ namespace Demo
 {
     class DemoGame : Game
     {
+        Texture t;
+        SpriteBatch spriteBatch;
         public override void Init()
         {
-            Texture t = new Texture("Content/Untitled.png");
+            t = new Texture("Content/Untitled.png");
+            spriteBatch = new SpriteBatch();
         }
 
         public override void Draw(GameTime time)
