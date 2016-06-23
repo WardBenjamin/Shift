@@ -11,7 +11,7 @@ using Shift.Graphics.GL;
 namespace Shift.Graphics
 {
     /// <summary>
-    /// 
+    /// Helper class for drawing sprites in one or more optimized batches.
     /// </summary>
     public class SpriteBatch
     {
@@ -32,16 +32,64 @@ namespace Shift.Graphics
 
         private int VertexStride = Marshal.SizeOf(new Vertex());
 
-        private int BatchCapacity;
+        private int batchCapacity;
+        private Dictionary<uint, Batch> batches;
+
+        private bool _beginCalled;
 
         public SpriteBatch(int capacity = 1000)
         {
-            BatchCapacity = capacity;
+            batchCapacity = capacity;
 
             // Generate VAO and VBOs
             VAO = Gl.GenVertexArray();
             VBO = Gl.GenBuffer();
             EBO = Gl.GenBuffer();
+
+            _beginCalled = false;
+        }
+
+        /// <summary>
+        /// Begins a new sprite batch . 
+        /// </summary>
+        public void Begin()
+        {
+            if (_beginCalled)
+                throw new InvalidOperationException("Begin cannot be called again until after End!");
+            _beginCalled = true;
+            batches = new Dictionary<uint, Batch>();
+        }
+
+        public void Draw(Texture texture, Vector2 position)
+        {
+            if (!_beginCalled)
+                throw new InvalidOperationException("Begin must be called before Draw!");
+            Vertex tl, tr, bl, br;
+            tl = new Vertex(position, 1, Color.White, Vector2.Zero);
+            tr = new Vertex(new Vector2(position.X + texture.Size.X, position.Y), 1, Color.White, Vector2.UnitX);
+            bl = new Vertex(new Vector2(position.X, position.Y + texture.Size.Y), 1, Color.White, Vector2.UnitY);
+            br = new Vertex(new Vector2(position.X + texture.Size.X, position.Y + texture.Size.Y), 1, Color.White, Vector2.One);
+            Draw(texture, tl, tr, bl, br);
+        }
+
+        private void Draw(Texture texture, Vertex tl, Vertex tr, Vertex bl, Vertex br)
+        {
+            if (!batches.ContainsKey(texture.TextureID))
+                batches.Add(texture.TextureID, new Batch(texture, batchCapacity));
+
+            batches[texture.TextureID].AddSprite(tl, tr, bl, br);
+        }
+
+        /// <summary>
+        /// Ends batching and flushes batches to GPU.
+        /// </summary>
+        public void End()
+        {
+            if (!_beginCalled)
+                throw new InvalidOperationException("Begin must be called before End!");
+            foreach (var batch in batches.Values)
+                DrawBatch(batch);
+            _beginCalled = false;
         }
 
         private void DrawBatch(Batch batch)
@@ -59,7 +107,7 @@ namespace Shift.Graphics
             Gl.VertexAttribPointer(0, 3, (int)VertexPointerType.Float, false, VertexStride, 0);
             // Color
             Gl.EnableVertexAttribArray(1);
-            Gl.VertexAttribPointer(1, 1, (int)VertexPointerType.Int, false, VertexStride, Vector3.SizeInBytes);
+            Gl.VertexAttribPointer(1, 4, Gl.UNSIGNED_BYTE, true, VertexStride, Vector3.SizeInBytes);
             // UV
             Gl.EnableVertexAttribArray(2);
             Gl.VertexAttribPointer(2, 2, (int)VertexPointerType.Float, false, VertexStride, Vector3.SizeInBytes + Color.SizeInBytes);
@@ -71,8 +119,8 @@ namespace Shift.Graphics
 
             Gl.BindBuffer(BufferTargetARB.ArrayBuffer, 0);
             Gl.BindBuffer(BufferTargetARB.ElementArrayBuffer, 0);
-            Gl.DisableVertexAttribArray(0);            
-            Gl.DisableVertexAttribArray(1);            
+            Gl.DisableVertexAttribArray(0);
+            Gl.DisableVertexAttribArray(1);
             Gl.DisableVertexAttribArray(2);
             Gl.BindVertexArray(0);
         }
@@ -84,21 +132,21 @@ namespace Shift.Graphics
             public Color Color;
             public Vector2 UV;
 
-            Vertex(Vector2 position, Color color, Vector2 uv)
+            public Vertex(Vector2 position, Color color, Vector2 uv)
             {
                 Position = new Vector3(position, 0);
                 Color = color;
                 UV = uv;
             }
 
-            Vertex(Vector2 position, int order, Color color, Vector2 uv)
+            public Vertex(Vector2 position, int order, Color color, Vector2 uv)
             {
                 Position = new Vector3(position, order);
                 Color = color;
                 UV = uv;
             }
 
-            Vertex(Vector3 position, Color color, Vector2 uv)
+            public Vertex(Vector3 position, Color color, Vector2 uv)
             {
                 Position = position;
                 Color = color;
@@ -126,7 +174,7 @@ namespace Shift.Graphics
             /// </summary>
             public Texture Texture;
 
-            Batch(Texture texture, int capacity)
+            public Batch(Texture texture, int capacity)
             {
                 Texture = texture;
                 Capacity = capacity;
@@ -135,7 +183,7 @@ namespace Shift.Graphics
                 Vertices = new Vertex[Capacity];
                 Indices = new int[Capacity];
 
-                for (int i = 0; i < Capacity; i++)
+                for (int i = 0; i < (int)(Capacity / 6.0); i++)
                 {
                     Indices[i * 6 + 0] = 0 + (i * 4);
                     Indices[i * 6 + 1] = 1 + (i * 4);
@@ -147,7 +195,7 @@ namespace Shift.Graphics
                 }
             }
 
-            bool AddSprite(Vertex tl, Vertex tr, Vertex bl, Vertex br)
+            public bool AddSprite(Vertex tl, Vertex tr, Vertex bl, Vertex br)
             {
                 if (VertexCount + 6 > Capacity)
                     return false;
@@ -181,7 +229,7 @@ namespace Shift.Graphics
             @"#version 140
 
             in vec3 vpos;
-            in uint packedcolor;
+            in vec4 vcolor;
             in vec2 uv;
 
             out vec4 color;
@@ -189,12 +237,11 @@ namespace Shift.Graphics
 
             void main() {
                 texUV = uv;
-                color = vec4(packedcolor & unit(0x00FF0000), packedcolor & uint(0x0000FF00),
-                                packedcolor & uint(0x000000FF), packedcolor & uint(0xFF000000);
+                color = vcolor
                 gl_Position = vec4(vpos, 0);
             }";
 
-        private static string fragmentShaderSource = 
+        private static string fragmentShaderSource =
             @"#version 140
 
             in vec4 color;
