@@ -58,6 +58,8 @@ namespace Shift.Graphics
                 throw new InvalidOperationException("Begin cannot be called again until after End!");
             _beginCalled = true;
             batches = new Dictionary<uint, Batch>();
+            Gl.Enable(EnableCap.Blend);
+            Gl.Disable(EnableCap.DepthTest);
         }
 
         public void Draw(Texture texture, Vector2 position)
@@ -87,8 +89,11 @@ namespace Shift.Graphics
         {
             if (!_beginCalled)
                 throw new InvalidOperationException("Begin must be called before End!");
+            // if (deferred drawing mode)
             foreach (var batch in batches.Values)
                 DrawBatch(batch);
+            Gl.Disable(EnableCap.Blend);
+            Gl.Enable(EnableCap.DepthTest);
             _beginCalled = false;
         }
 
