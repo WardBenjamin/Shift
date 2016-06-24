@@ -1,7 +1,6 @@
 var searchData=
 [
   ['e',['E',['../class_shift_1_1_math_helper.html#a7346d29eaed77a39e4f47474270da6eb',1,'Shift.MathHelper.E()'],['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928a3a3ea00cfc35332cedf6e5e9a32e94da',1,'Shift.Input.E()']]],
-  ['edgeflagarray',['EdgeFlagArray',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae79ebf789481052d2c648c7593d6004cacd149ea4c340a79c43d8f2a92f734a3c',1,'Shift::Graphics::GL']]],
   ['elementarraybufferbinding',['ElementArrayBufferBinding',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea0633febb50ea04370e6dc9835c7708fe',1,'Shift::Graphics::GL']]],
   ['empty',['empty',['../struct_shift_1_1_input_1_1_keyboard_state.html#a736fc44842dcdaf64f4e62d4f2b988e0',1,'Shift.Input.KeyboardState.empty()'],['../struct_shift_1_1_rectangle.html#a960e12e66683e8c5212aad23b819935a',1,'Shift.Rectangle.Empty()']]],
   ['end',['End',['../class_shift_1_1_graphics_1_1_sprite_batch.html#a67630d9981330e7f3456526d6fe9e884',1,'Shift.Graphics.SpriteBatch.End()'],['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928a87557f11575c0ad78e4e28abedc13b6e',1,'Shift.Input.End()']]],

@@ -11,7 +11,7 @@ var searchData=
   ['bisque',['Bisque',['../struct_shift_1_1_color.html#a4f05eae2a84dc94ba74318470ab90eec',1,'Shift::Color']]],
   ['black',['Black',['../struct_shift_1_1_color.html#a97ae59f4fb064d379b486e502ca6ec8b',1,'Shift::Color']]],
   ['blanchedalmond',['BlanchedAlmond',['../struct_shift_1_1_color.html#a51bab6b7e158068f6c5352c4881d0b14',1,'Shift::Color']]],
-  ['blend',['Blend',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae79ebf789481052d2c648c7593d6004ca09ac609fcdb514c9adca34e7f97b4ac4',1,'Shift.Graphics.GL.Blend()'],['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea09ac609fcdb514c9adca34e7f97b4ac4',1,'Shift.Graphics.GL.Blend()']]],
+  ['blend',['Blend',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea09ac609fcdb514c9adca34e7f97b4ac4',1,'Shift::Graphics::GL']]],
   ['blendcolor',['BlendColor',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea9f45a06d3407a388870135acea193ba7',1,'Shift::Graphics::GL']]],
   ['blendcolorext',['BlendColorExt',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2eac6f1be226e89e080123dd299c1914a8f',1,'Shift::Graphics::GL']]],
   ['blenddstalpha',['BlendDstAlpha',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea06f3f1ee80c86dde46ac35ea1b4b2673',1,'Shift::Graphics::GL']]],
