@@ -52,6 +52,7 @@ var struct_shift_1_1_quaternion =
     [ "Subtract", "struct_shift_1_1_quaternion.html#aa8ae28f806c9395a19d0a876f00960fc", null ],
     [ "ToString", "struct_shift_1_1_quaternion.html#ad25f400f630250ac0ccb0864a6937655", null ],
     [ "ToVector4", "struct_shift_1_1_quaternion.html#a334404170ee1622910a96f68cd88db10", null ],
+    [ "SizeInBytes", "struct_shift_1_1_quaternion.html#abf3347690cf569b3468ec7e14d3b88e5", null ],
     [ "W", "struct_shift_1_1_quaternion.html#a9eddb02e9849fa34775724d421dbb74c", null ],
     [ "X", "struct_shift_1_1_quaternion.html#a16c2f7da9f4b10f7b79c39ee08175219", null ],
     [ "Y", "struct_shift_1_1_quaternion.html#a1589979af3a6341132c323b135fb3db7", null ],

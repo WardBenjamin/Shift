@@ -104,14 +104,154 @@ $(document).ready(function(){initNavTree('class_shift_1_1_graphics_1_1_sprite_ba
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="class_shift_1_1_graphics_1_1_sprite_batch-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Shift.Graphics.SpriteBatch Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Helper class for drawing sprites in one or more optimized batches.  
+ <a href="class_shift_1_1_graphics_1_1_sprite_batch.html#details">More...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a505c68362a652bf012d4bb0ea76cde0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shift_1_1_graphics_1_1_sprite_batch.html#a505c68362a652bf012d4bb0ea76cde0b">SpriteBatch</a> (int capacity=1000)</td></tr>
+<tr class="separator:a505c68362a652bf012d4bb0ea76cde0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16e8aa1a0f046f85d5144e3ba5cc73e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shift_1_1_graphics_1_1_sprite_batch.html#af16e8aa1a0f046f85d5144e3ba5cc73e">Begin</a> ()</td></tr>
+<tr class="memdesc:af16e8aa1a0f046f85d5144e3ba5cc73e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Begins a new sprite batch .  <a href="#af16e8aa1a0f046f85d5144e3ba5cc73e">More...</a><br/></td></tr>
+<tr class="separator:af16e8aa1a0f046f85d5144e3ba5cc73e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c682b8c804b95e09fb25ac37225208"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shift_1_1_graphics_1_1_sprite_batch.html#a36c682b8c804b95e09fb25ac37225208">Draw</a> (<a class="el" href="class_shift_1_1_graphics_1_1_texture.html">Texture</a> texture, <a class="el" href="struct_shift_1_1_vector2.html">Vector2</a> position)</td></tr>
+<tr class="separator:a36c682b8c804b95e09fb25ac37225208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67630d9981330e7f3456526d6fe9e884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_shift_1_1_graphics_1_1_sprite_batch.html#a67630d9981330e7f3456526d6fe9e884">End</a> ()</td></tr>
+<tr class="memdesc:a67630d9981330e7f3456526d6fe9e884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Ends batching and flushes batches to GPU.  <a href="#a67630d9981330e7f3456526d6fe9e884">More...</a><br/></td></tr>
+<tr class="separator:a67630d9981330e7f3456526d6fe9e884"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_sprite_batch_8cs_source.html#l00009">9</a> of file <a class="el" href="_sprite_batch_8cs_source.html">SpriteBatch.cs</a>.</p>
-</div><hr/>The documentation for this class was generated from the following file:<ul>
+<div class="textblock"><p>Helper class for drawing sprites in one or more optimized batches. </p>
+
+<p>Definition at line <a class="el" href="_sprite_batch_8cs_source.html#l00016">16</a> of file <a class="el" href="_sprite_batch_8cs_source.html">SpriteBatch.cs</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a505c68362a652bf012d4bb0ea76cde0b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Shift.Graphics.SpriteBatch.SpriteBatch </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>capacity</em> = <code>1000</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_sprite_batch_8cs_source.html#l00040">40</a> of file <a class="el" href="_sprite_batch_8cs_source.html">SpriteBatch.cs</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="af16e8aa1a0f046f85d5144e3ba5cc73e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Shift.Graphics.SpriteBatch.Begin </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Begins a new sprite batch . </p>
+
+<p>Definition at line <a class="el" href="_sprite_batch_8cs_source.html#l00055">55</a> of file <a class="el" href="_sprite_batch_8cs_source.html">SpriteBatch.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a36c682b8c804b95e09fb25ac37225208"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Shift.Graphics.SpriteBatch.Draw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_shift_1_1_graphics_1_1_texture.html">Texture</a>&#160;</td>
+          <td class="paramname"><em>texture</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="struct_shift_1_1_vector2.html">Vector2</a>&#160;</td>
+          <td class="paramname"><em>position</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_sprite_batch_8cs_source.html#l00063">63</a> of file <a class="el" href="_sprite_batch_8cs_source.html">SpriteBatch.cs</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a67630d9981330e7f3456526d6fe9e884"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Shift.Graphics.SpriteBatch.End </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Ends batching and flushes batches to GPU. </p>
+
+<p>Definition at line <a class="el" href="_sprite_batch_8cs_source.html#l00086">86</a> of file <a class="el" href="_sprite_batch_8cs_source.html">SpriteBatch.cs</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>Shift/Graphics/<a class="el" href="_sprite_batch_8cs_source.html">SpriteBatch.cs</a></li>
 </ul>
 </div><!-- contents -->

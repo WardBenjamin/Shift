@@ -203,22 +203,6 @@ var _gl_enum_8cs =
     [ "BufferPointer", "_gl_enum_8cs.html#a9f1c2ffd6d1e8cc965a5e46134f3d868", [
       [ "BufferMapPointer", "_gl_enum_8cs.html#a9f1c2ffd6d1e8cc965a5e46134f3d868afdf5386a709aa214066efefc936944ce", null ]
     ] ],
-    [ "BufferTarget", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdac", [
-      [ "ArrayBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacaa2ba314746bfdbdd8161b87ab77914be", null ],
-      [ "ElementArrayBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdaca31f38857117a1e260e97d3c5fb9f47a1", null ],
-      [ "PixelPackBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacae6b4f43d8adf680dcdad197c5cae3e14", null ],
-      [ "PixelUnpackBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdaca19e76464ab4c55cf2816d04f2f41b95c", null ],
-      [ "UniformBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdaca88f133adfed6c854e5731cdffbf208cf", null ],
-      [ "TextureBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacae87c60cfc6d01279f0012558025afb0e", null ],
-      [ "TransformFeedbackBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacab54d280912012ce1f5b8fc7d145fcb06", null ],
-      [ "CopyReadBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacab8c96e3c34048516a0c334d1b8b828f1", null ],
-      [ "CopyWriteBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacaa86fe54f76987f32457afabe330a6132", null ],
-      [ "DrawIndirectBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacae2fcc057580dac072b13a3b121167d95", null ],
-      [ "AtomicCounterBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacae080766d1af8855f448604fa5a1eb14c", null ],
-      [ "DispatchIndirectBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacaf7d0ac4e8e0d2b93ef0166531d047d21", null ],
-      [ "QueryBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdaca7ac926dc60ea3029253705f900e4b3d6", null ],
-      [ "ShaderStorageBuffer", "_gl_enum_8cs.html#a655a542453bf2fe8768d191bf5ccfdacad99aea40af16c3628b585f3d6f04c695", null ]
-    ] ],
     [ "BufferUsageHint", "_gl_enum_8cs.html#a13bde3cf6b8072af5d473248df9e9978", [
       [ "StreamDraw", "_gl_enum_8cs.html#a13bde3cf6b8072af5d473248df9e9978ab831b12d8d415645f1f00e37e0426ca2", null ],
       [ "StreamRead", "_gl_enum_8cs.html#a13bde3cf6b8072af5d473248df9e9978a10953b8796ab666281dc734e99aa5180", null ],
@@ -1395,14 +1379,6 @@ var _gl_enum_8cs =
       [ "InfoLogLength", "_gl_enum_8cs.html#a2042f1fbafbf0dd45447aa193c3e1082aa5ab80c7fc0b3053cf8b6ebbe0de0525", null ],
       [ "ShaderSourceLength", "_gl_enum_8cs.html#a2042f1fbafbf0dd45447aa193c3e1082ab56fafa182404e47dd99b289fb98ae08", null ]
     ] ],
-    [ "ShaderType", "_gl_enum_8cs.html#a1b5b2693ceafe6beea17919be8d46613", [
-      [ "FragmentShader", "_gl_enum_8cs.html#a1b5b2693ceafe6beea17919be8d46613a90a9bb4e665932b1781da33fc2f32922", null ],
-      [ "VertexShader", "_gl_enum_8cs.html#a1b5b2693ceafe6beea17919be8d46613aeb3ca4dac3e206977e0b7d998eefcc33", null ],
-      [ "GeometryShader", "_gl_enum_8cs.html#a1b5b2693ceafe6beea17919be8d46613a87fd5b66e314d52345d46590e7124805", null ],
-      [ "TessControlShader", "_gl_enum_8cs.html#a1b5b2693ceafe6beea17919be8d46613a07b9d30c5f1947be6bff1766b0d969ea", null ],
-      [ "TessEvaluationShader", "_gl_enum_8cs.html#a1b5b2693ceafe6beea17919be8d46613a12b462d6370f2684cb9a64a60f7faa7b", null ],
-      [ "ComputeShader", "_gl_enum_8cs.html#a1b5b2693ceafe6beea17919be8d46613a2216355d14abbc1a80dadd4f881c0f39", null ]
-    ] ],
     [ "SizedInternalFormat", "_gl_enum_8cs.html#adf3b958ac22fdb59ab9026884f9d694c", [
       [ "Rgba8", "_gl_enum_8cs.html#adf3b958ac22fdb59ab9026884f9d694ca22beb074e892828ec2f8d50736fc49c0", null ],
       [ "Rgba16", "_gl_enum_8cs.html#adf3b958ac22fdb59ab9026884f9d694cadd9a82bad8dac085b8f9e5c3256c41f0", null ],
@@ -1640,19 +1616,6 @@ var _gl_enum_8cs =
     ] ],
     [ "VertexAttribPointerParameter", "_gl_enum_8cs.html#ac3dc90464f2dd43c397aecfa6cbe8602", [
       [ "ArrayPointer", "_gl_enum_8cs.html#ac3dc90464f2dd43c397aecfa6cbe8602ad961f6acf2688584cea06df298df875c", null ]
-    ] ],
-    [ "VertexAttribPointerType", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759b", [
-      [ "Byte", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759baa245c3230debe5c956484ecc6fa93877", null ],
-      [ "UnsignedByte", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759ba8f0fb883eb5a52838534191513e365a2", null ],
-      [ "Short", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759ba30bb747c98bccdd11b3f89e644c4d0ad", null ],
-      [ "UnsignedShort", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759baeb51124277f3ec904a9af74d5de34e7b", null ],
-      [ "Int", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759ba1686a6c336b71b36d77354cea19a8b52", null ],
-      [ "UnsignedInt", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759bac93cff91b6b9a57fa32bbe1863150070", null ],
-      [ "Float", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759ba22ae0e2b89e5e3d477f988cc36d3272b", null ],
-      [ "Double", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759bad909d38d705ce75386dd86e611a82f5b", null ],
-      [ "HalfFloat", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759bad35523d81610cee8b87cdac1853ad51f", null ],
-      [ "UnsignedUInt2101010Reversed", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759ba1cbff0441621fd3eff037c6f4ca5e7b7", null ],
-      [ "UnsignedInt2101010Reversed", "_gl_enum_8cs.html#aa6622aaf09c9e6a5635c0d6bfa77759ba7ce733e3de3ce733b6eaf236f849dbf8", null ]
     ] ],
     [ "VertexAttribPType", "_gl_enum_8cs.html#aa9cc5bf0a93b2e7fc6229705e11f4600", [
       [ "UnsignedUInt2101010Reversed", "_gl_enum_8cs.html#aa9cc5bf0a93b2e7fc6229705e11f4600a1cbff0441621fd3eff037c6f4ca5e7b7", null ],

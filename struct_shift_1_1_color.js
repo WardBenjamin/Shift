@@ -23,6 +23,7 @@ var struct_shift_1_1_color =
     [ "ToString", "struct_shift_1_1_color.html#a3ea8bd2d3e93fa2d0083bdff0942e122", null ],
     [ "ToVector3", "struct_shift_1_1_color.html#a3db5d5fe1fa94290dfa10de606d97701", null ],
     [ "ToVector4", "struct_shift_1_1_color.html#aedfae50329c43f957ee007ce51956a16", null ],
+    [ "SizeInBytes", "struct_shift_1_1_color.html#aef5a895346e5295e0ede2aa6d4cb5513", null ],
     [ "A", "struct_shift_1_1_color.html#a7d4a5224f522338d4095d3f38499fc2f", null ],
     [ "AliceBlue", "struct_shift_1_1_color.html#a8b29ff900a19f1ab619f6c96914713ca", null ],
     [ "AntiqueWhite", "struct_shift_1_1_color.html#ac562fe59412c6ec7cbd48f73916f8d3a", null ],

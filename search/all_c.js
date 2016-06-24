@@ -62,7 +62,6 @@ var searchData=
   ['locationindex',['LocationIndex',['../namespace_shift_1_1_graphics_1_1_g_l.html#a47cc205723fb7559e78ff2614f8f7bf6a9828e44a32c6d363d06486a1824042ca',1,'Shift::Graphics::GL']]],
   ['log10e',['Log10E',['../class_shift_1_1_math_helper.html#a35ba0d91568647fae6310750da7f9ffa',1,'Shift::MathHelper']]],
   ['log2e',['Log2E',['../class_shift_1_1_math_helper.html#a3bfcd754481aebd1d56db58fdcc5e994',1,'Shift::MathHelper']]],
-  ['logicop',['LogicOp',['../namespace_shift_1_1_graphics_1_1_g_l.html#a181a2e124f2adbfe580232056d07bb56',1,'Shift::Graphics::GL']]],
   ['logicopmode',['LogicOpMode',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea771df084b497cda17ed6c57fe4c55943',1,'Shift::Graphics::GL']]],
   ['lowerleft',['LowerLeft',['../namespace_shift_1_1_graphics_1_1_g_l.html#a107cdba88471d59e150b955f49879fc1aa8594fd8be60c94e1a2607fa0fa50fae',1,'Shift::Graphics::GL']]],
   ['luminance',['Luminance',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae7621bbf3746de5720fdbb096892e348a280f73691109aeaa235ffddd2d154d9b',1,'Shift::Graphics::GL']]],

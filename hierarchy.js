@@ -49,5 +49,6 @@ var hierarchy =
     [ "Shift.Platform", "class_shift_1_1_platform.html", null ],
     [ "Shift.Graphics.GL.ProgramParam", "class_shift_1_1_graphics_1_1_g_l_1_1_program_param.html", null ],
     [ "Shift.Graphics.SpriteBatch", "class_shift_1_1_graphics_1_1_sprite_batch.html", null ],
+    [ "Shift.Graphics.TextureRegion", "class_shift_1_1_graphics_1_1_texture_region.html", null ],
     [ "Shift.Graphics.GL.GLSLLexer.Token", "class_shift_1_1_graphics_1_1_g_l_1_1_g_l_s_l_lexer_1_1_token.html", null ]
 ];

@@ -15,6 +15,7 @@ var struct_shift_1_1_point =
     [ "operator==", "struct_shift_1_1_point.html#a50b3bc3d0d8c8d177832d89fd64055ff", null ],
     [ "ToString", "struct_shift_1_1_point.html#abde739df2d8a4031ab7310d33c10503e", null ],
     [ "ToVector2", "struct_shift_1_1_point.html#ab7c21acb369eea8315cb10db2c1bdd81", null ],
+    [ "SizeInBytes", "struct_shift_1_1_point.html#a168e125ae1f591d071fb825746af0b9f", null ],
     [ "X", "struct_shift_1_1_point.html#a35047b34151c360bdbf3bb3182f4bd5d", null ],
     [ "Y", "struct_shift_1_1_point.html#a0902f5e9487865391b8d138601c6fe2e", null ],
     [ "DebugDisplayString", "struct_shift_1_1_point.html#a0dc662145507c9e414b252bdde9af776", null ],

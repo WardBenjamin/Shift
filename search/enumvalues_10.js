@@ -12,7 +12,6 @@ var searchData=
   ['quadstrip',['QuadStrip',['../namespace_shift_1_1_graphics_1_1_g_l.html#ac15ccbaf5205a33106a21ff9aa6ae0ffa0b6616b96ded14d51656ce9bd0fcdc35',1,'Shift::Graphics::GL']]],
   ['quadtextureselectsgis',['QuadTextureSelectSgis',['../namespace_shift_1_1_graphics_1_1_g_l.html#aabc5a927c4c656fbe48a015046d681d1ad7be462e1cd480dcd79f7317eb247814',1,'Shift::Graphics::GL']]],
   ['query',['Query',['../namespace_shift_1_1_graphics_1_1_g_l.html#afcc372ee050bd0cb33ec73162ff9456ba66c1b4c7f3dc385b68a9fa903ccd016d',1,'Shift::Graphics::GL']]],
-  ['querybuffer',['QueryBuffer',['../namespace_shift_1_1_graphics_1_1_g_l.html#a655a542453bf2fe8768d191bf5ccfdaca7ac926dc60ea3029253705f900e4b3d6',1,'Shift::Graphics::GL']]],
   ['querybyregionnowait',['QueryByRegionNoWait',['../namespace_shift_1_1_graphics_1_1_g_l.html#a5da3a8d4b5e1ed2851f7f51f4eecdac3aaf0098413787cea35bd94f5b55c46a80',1,'Shift::Graphics::GL']]],
   ['querybyregionwait',['QueryByRegionWait',['../namespace_shift_1_1_graphics_1_1_g_l.html#a5da3a8d4b5e1ed2851f7f51f4eecdac3a860d2cf607cc365a8496e821db0c4553',1,'Shift::Graphics::GL']]],
   ['querycounterbits',['QueryCounterBits',['../namespace_shift_1_1_graphics_1_1_g_l.html#aea2ede37622c9e0151bbd74cb608e117af17f5fb947a69df8209c4a5f421c74ba',1,'Shift::Graphics::GL']]],

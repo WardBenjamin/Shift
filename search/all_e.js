@@ -38,6 +38,5 @@ var searchData=
   ['numpad8',['NumPad8',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928ae409cf9af5cfc28aed6cf45ac0edf435',1,'Shift::Input']]],
   ['numpad9',['NumPad9',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928abec4386b816c0db1696a9906734d2df6',1,'Shift::Input']]],
   ['numprogrambinaryformats',['NumProgramBinaryFormats',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea39430611faaec6944eab2d0e45513d37',1,'Shift::Graphics::GL']]],
-  ['numshaderbinaryformats',['NumShaderBinaryFormats',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea9a229d2519dfd1618644a77a81c3f0ae',1,'Shift::Graphics::GL']]],
-  ['nvtransformfeedback2',['NvTransformFeedback2',['../namespace_shift_1_1_graphics_1_1_g_l.html#a89e90873a032c0d02559960699fdc765',1,'Shift::Graphics::GL']]]
+  ['numshaderbinaryformats',['NumShaderBinaryFormats',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea9a229d2519dfd1618644a77a81c3f0ae',1,'Shift::Graphics::GL']]]
 ];

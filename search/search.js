@@ -12,9 +12,9 @@ var indexSectionsWithContent =
   2: "s",
   3: "abcgjklmpqrstv",
   4: "abcdefghiklmnopqrstuvw",
-  5: "_dehklmnprtwxyz",
+  5: "_dehklmnprstwxyz",
   6: "eg",
-  7: "abcdefghklmnopqrstv",
+  7: "bkopst",
   8: "abcdefghijklmnopqrstuvwxyz",
   9: "abcdefghiklmnoprstuvwxyz",
   10: "ls"

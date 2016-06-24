@@ -2,7 +2,6 @@ var searchData=
 [
   ['e',['E',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928a3a3ea00cfc35332cedf6e5e9a32e94da',1,'Shift::Input']]],
   ['edgeflagarray',['EdgeFlagArray',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae79ebf789481052d2c648c7593d6004cacd149ea4c340a79c43d8f2a92f734a3c',1,'Shift::Graphics::GL']]],
-  ['elementarraybuffer',['ElementArrayBuffer',['../namespace_shift_1_1_graphics_1_1_g_l.html#a655a542453bf2fe8768d191bf5ccfdaca31f38857117a1e260e97d3c5fb9f47a1',1,'Shift::Graphics::GL']]],
   ['elementarraybufferbinding',['ElementArrayBufferBinding',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea0633febb50ea04370e6dc9835c7708fe',1,'Shift::Graphics::GL']]],
   ['end',['End',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928a87557f11575c0ad78e4e28abedc13b6e',1,'Shift::Input']]],
   ['enter',['Enter',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928af1851d5600eae616ee802a31ac74701b',1,'Shift::Input']]],

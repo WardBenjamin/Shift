@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['total',['Total',['../class_shift_1_1_game_time.html#a254503b1bf62bd554298e368594220b7',1,'Shift::GameTime']]],
-  ['twopi',['TwoPi',['../class_shift_1_1_math_helper.html#a97c115148b72a3aee644c92ea939385f',1,'Shift::MathHelper']]]
+  ['sizeinbytes',['SizeInBytes',['../struct_shift_1_1_color.html#aef5a895346e5295e0ede2aa6d4cb5513',1,'Shift.Color.SizeInBytes()'],['../struct_shift_1_1_matrix.html#a7ae507c951fd6943c6f9f2b352f6f83c',1,'Shift.Matrix.SizeInBytes()'],['../struct_shift_1_1_plane.html#af23825da7ae818daa6e8a520cee8c558',1,'Shift.Plane.SizeInBytes()'],['../struct_shift_1_1_point.html#a168e125ae1f591d071fb825746af0b9f',1,'Shift.Point.SizeInBytes()'],['../struct_shift_1_1_quaternion.html#abf3347690cf569b3468ec7e14d3b88e5',1,'Shift.Quaternion.SizeInBytes()'],['../struct_shift_1_1_rectangle.html#a47e8f3fbb524f967723f94326cc7e9c4',1,'Shift.Rectangle.SizeInBytes()'],['../struct_shift_1_1_vector2.html#a5afd1f6cb9c4e2877d79d7b31dc92b00',1,'Shift.Vector2.SizeInBytes()'],['../struct_shift_1_1_vector3.html#a09b64872f1af81ce805d1e90f04eb151',1,'Shift.Vector3.SizeInBytes()'],['../struct_shift_1_1_vector4.html#a3d5ab22f56ef2d92f73710f260d3ba79',1,'Shift.Vector4.SizeInBytes()']]]
 ];

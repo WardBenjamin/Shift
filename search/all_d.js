@@ -45,7 +45,6 @@ var searchData=
   ['mapunsynchronizedbit',['MapUnsynchronizedBit',['../namespace_shift_1_1_graphics_1_1_g_l.html#a3ffb3a2bf334fa184f4d3e9380dea7d8abd82db9de16e0911f6408b1723efb29a',1,'Shift::Graphics::GL']]],
   ['mapwritebit',['MapWriteBit',['../namespace_shift_1_1_graphics_1_1_g_l.html#a3ffb3a2bf334fa184f4d3e9380dea7d8a2d1a0184bf2a046bf05844ce1651e20c',1,'Shift::Graphics::GL']]],
   ['maroon',['Maroon',['../struct_shift_1_1_color.html#ae8a920f6addd93637307b78a9cee5ed6',1,'Shift::Color']]],
-  ['materialface',['MaterialFace',['../namespace_shift_1_1_graphics_1_1_g_l.html#ac647253647f8dd865ad508452c2f085d',1,'Shift::Graphics::GL']]],
   ['mathhelper',['MathHelper',['../class_shift_1_1_math_helper.html',1,'Shift']]],
   ['mathhelper_2ecs',['MathHelper.cs',['../_math_helper_8cs.html',1,'']]],
   ['matrix',['Matrix',['../struct_shift_1_1_matrix.html',1,'Shift']]],

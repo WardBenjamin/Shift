@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y',['Y',['../struct_shift_1_1_point.html#a0902f5e9487865391b8d138601c6fe2e',1,'Shift.Point.Y()'],['../struct_shift_1_1_quaternion.html#a1589979af3a6341132c323b135fb3db7',1,'Shift.Quaternion.Y()'],['../struct_shift_1_1_rectangle.html#ab06d56d5cd19c412261f315ba8c0d343',1,'Shift.Rectangle.Y()'],['../struct_shift_1_1_vector2.html#a6bfa309f51c674059ad8dbb8330dd1b1',1,'Shift.Vector2.Y()'],['../struct_shift_1_1_vector3.html#a0745a253569241f262da80fd2c731906',1,'Shift.Vector3.Y()'],['../struct_shift_1_1_vector4.html#a501f716d17179bfffc68ed8bcf7dfc06',1,'Shift.Vector4.Y()']]]
+  ['x',['X',['../struct_shift_1_1_point.html#a35047b34151c360bdbf3bb3182f4bd5d',1,'Shift.Point.X()'],['../struct_shift_1_1_quaternion.html#a16c2f7da9f4b10f7b79c39ee08175219',1,'Shift.Quaternion.X()'],['../struct_shift_1_1_rectangle.html#ab98ec09fa68e5851c265dcd860c8c9b9',1,'Shift.Rectangle.X()'],['../struct_shift_1_1_vector2.html#a20646e61459a97943334ea76bc49b9c4',1,'Shift.Vector2.X()'],['../struct_shift_1_1_vector3.html#a7a10efb7f04696efc18a64d92c78d9e4',1,'Shift.Vector3.X()'],['../struct_shift_1_1_vector4.html#a34f7a720ad49350da89857acf545757b',1,'Shift.Vector4.X()']]]
 ];

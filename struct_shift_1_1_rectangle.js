@@ -30,6 +30,7 @@ var struct_shift_1_1_rectangle =
     [ "Union", "struct_shift_1_1_rectangle.html#a85eeef43c6e3af27da4cb4027f92ea93", null ],
     [ "Union", "struct_shift_1_1_rectangle.html#adbaa4fc26001995317249e1b53338fbc", null ],
     [ "Height", "struct_shift_1_1_rectangle.html#ac002a6e66d69f53aa5f7cfcd10987af6", null ],
+    [ "SizeInBytes", "struct_shift_1_1_rectangle.html#a47e8f3fbb524f967723f94326cc7e9c4", null ],
     [ "Width", "struct_shift_1_1_rectangle.html#af684b31fb2cde74970655c50f0a7aaca", null ],
     [ "X", "struct_shift_1_1_rectangle.html#ab98ec09fa68e5851c265dcd860c8c9b9", null ],
     [ "Y", "struct_shift_1_1_rectangle.html#ab06d56d5cd19c412261f315ba8c0d343", null ],

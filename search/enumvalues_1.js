@@ -36,5 +36,5 @@ var searchData=
   ['buffersize',['BufferSize',['../namespace_shift_1_1_graphics_1_1_g_l.html#a43745eee2cb63c6d20c9cea8d34dc01da499060b0500a6a61e175b98476424e94',1,'Shift::Graphics::GL']]],
   ['bufferusage',['BufferUsage',['../namespace_shift_1_1_graphics_1_1_g_l.html#a43745eee2cb63c6d20c9cea8d34dc01daf062af91a4178310e2063ee325d9f140',1,'Shift::Graphics::GL']]],
   ['buffervariable',['BufferVariable',['../namespace_shift_1_1_graphics_1_1_g_l.html#a8c1274ec2109dd8082089487d03bbd27a79deadf911fe8744af6dd89ea7d678a1',1,'Shift::Graphics::GL']]],
-  ['byte',['Byte',['../namespace_shift_1_1_graphics_1_1_g_l.html#a479b65b5578dde74b5a6245766692da3aa245c3230debe5c956484ecc6fa93877',1,'Shift.Graphics.GL.Byte()'],['../namespace_shift_1_1_graphics_1_1_g_l.html#aa6622aaf09c9e6a5635c0d6bfa77759baa245c3230debe5c956484ecc6fa93877',1,'Shift.Graphics.GL.Byte()']]]
+  ['byte',['Byte',['../namespace_shift_1_1_graphics_1_1_g_l.html#a479b65b5578dde74b5a6245766692da3aa245c3230debe5c956484ecc6fa93877',1,'Shift::Graphics::GL']]]
 ];

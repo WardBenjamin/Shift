@@ -107,8 +107,6 @@ var searchData=
   ['convolutionhintsgix',['ConvolutionHintSgix',['../namespace_shift_1_1_graphics_1_1_g_l.html#a42104eb4dbad8a7f5c762169c9ae271ca3b7371c109c3a1b0b71e070a37337ea7',1,'Shift::Graphics::GL']]],
   ['copy',['Copy',['../namespace_shift_1_1_graphics_1_1_g_l.html#a181a2e124f2adbfe580232056d07bb56a5fb63579fc981698f97d55bfecb213ea',1,'Shift::Graphics::GL']]],
   ['copyinverted',['CopyInverted',['../namespace_shift_1_1_graphics_1_1_g_l.html#a181a2e124f2adbfe580232056d07bb56ae7a387d9808b05131e4906e7655a33a0',1,'Shift::Graphics::GL']]],
-  ['copyreadbuffer',['CopyReadBuffer',['../namespace_shift_1_1_graphics_1_1_g_l.html#a655a542453bf2fe8768d191bf5ccfdacab8c96e3c34048516a0c334d1b8b828f1',1,'Shift::Graphics::GL']]],
-  ['copywritebuffer',['CopyWriteBuffer',['../namespace_shift_1_1_graphics_1_1_g_l.html#a655a542453bf2fe8768d191bf5ccfdacaa86fe54f76987f32457afabe330a6132',1,'Shift::Graphics::GL']]],
   ['crsel',['Crsel',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928a6b37376e9bc32431523b142965bf3c4c',1,'Shift::Input']]],
   ['ctrl',['Ctrl',['../class_shift_1_1_input_1_1_keyboard.html#a6bcf51f8b39be9731fb77a402d851dc3a2b61e0d5977f2e38f06e16281c802b47',1,'Shift::Input::Keyboard']]],
   ['cullface',['CullFace',['../namespace_shift_1_1_graphics_1_1_g_l.html#ae79ebf789481052d2c648c7593d6004ca5fbf085d301b88f5c73689461c9b221b',1,'Shift.Graphics.GL.CullFace()'],['../namespace_shift_1_1_graphics_1_1_g_l.html#ae032bada7e489dcf34becaf25024fb2ea5fbf085d301b88f5c73689461c9b221b',1,'Shift.Graphics.GL.CullFace()']]],

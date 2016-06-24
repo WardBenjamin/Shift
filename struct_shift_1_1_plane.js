@@ -25,5 +25,6 @@ var struct_shift_1_1_plane =
     [ "Transform", "struct_shift_1_1_plane.html#ab3c1cc17f2a3a6e6a353ccc5ba4d257f", null ],
     [ "D", "struct_shift_1_1_plane.html#adaf2fc5092d33f953e22eab928b49d0b", null ],
     [ "Normal", "struct_shift_1_1_plane.html#a02f9f09b9fa5a29507df6248060a5719", null ],
+    [ "SizeInBytes", "struct_shift_1_1_plane.html#af23825da7ae818daa6e8a520cee8c558", null ],
     [ "DebugDisplayString", "struct_shift_1_1_plane.html#af5e2fd4570af6e65d61c9965d3d3d270", null ]
 ];

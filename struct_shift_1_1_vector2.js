@@ -74,6 +74,7 @@ var struct_shift_1_1_vector2 =
     [ "TransformNormal", "struct_shift_1_1_vector2.html#a1d8afb355d119b8bf7da1acc46b5888e", null ],
     [ "TransformNormal", "struct_shift_1_1_vector2.html#a464283a8cd53040487e38a7f2750c731", null ],
     [ "TransformNormal", "struct_shift_1_1_vector2.html#a88362897e92540e7d222e4e44b494c8c", null ],
+    [ "SizeInBytes", "struct_shift_1_1_vector2.html#a5afd1f6cb9c4e2877d79d7b31dc92b00", null ],
     [ "X", "struct_shift_1_1_vector2.html#a20646e61459a97943334ea76bc49b9c4", null ],
     [ "Y", "struct_shift_1_1_vector2.html#a6bfa309f51c674059ad8dbb8330dd1b1", null ],
     [ "DebugDisplayString", "struct_shift_1_1_vector2.html#a061385d2bce51b444d1a74be766445c8", null ],

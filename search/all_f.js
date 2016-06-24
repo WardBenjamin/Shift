@@ -1,7 +1,6 @@
 var searchData=
 [
   ['o',['O',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928af186217753c37b9b9f958d906208506e',1,'Shift::Input']]],
-  ['objectlabel',['ObjectLabel',['../namespace_shift_1_1_graphics_1_1_g_l.html#afcc372ee050bd0cb33ec73162ff9456b',1,'Shift::Graphics::GL']]],
   ['objecttype',['ObjectType',['../namespace_shift_1_1_graphics_1_1_g_l.html#a9b22e33f573bf324b063ae7eb97e2468ab74c375731dc50c662d6ce08befe2db0',1,'Shift.Graphics.GL.ObjectType()'],['../namespace_shift_1_1_graphics_1_1_g_l.html#a3bd7f3fee08a8a5f64440b9306ec9e0aab74c375731dc50c662d6ce08befe2db0',1,'Shift.Graphics.GL.ObjectType()']]],
   ['oem8',['Oem8',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928a7e15036a6a137efa640fb4305c775dda',1,'Shift::Input']]],
   ['oemauto',['OemAuto',['../namespace_shift_1_1_input.html#a72c59dd5d465e6efa20223b439a4b928a93b2675b5ab5224379d7fb618c2dceb9',1,'Shift::Input']]],
