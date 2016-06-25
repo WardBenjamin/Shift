@@ -20,6 +20,7 @@ namespace Shift.Graphics
         static SpriteBatch()
         {
             shader = new ShaderProgram(vertexShaderSource, fragmentShaderSource);
+            Console.WriteLine(shader.ProgramLog);
         }
 
         // Matrix caches
@@ -50,7 +51,7 @@ namespace Shift.Graphics
         }
 
         /// <summary>
-        /// Begins a new sprite batch . 
+        /// Begins a new sprite batch.
         /// </summary>
         public void Begin()
         {
@@ -242,7 +243,7 @@ namespace Shift.Graphics
 
             void main() {
                 texUV = uv;
-                color = vcolor
+                color = vcolor;
                 gl_Position = vec4(vpos, 0);
             }";
 
